@@ -1,1 +1,12 @@
-<p>project works!</p>
+
+<p className="team-head-text" id="ot-wrapper"><span id="ot-text">Project List</span></p>
+  <div *ngFor="let user of dataSource" style="text-align:center">
+    <main class="page-content">
+      <div class="card">
+        <div class="content">
+          <h2 class="title">{{user.title}}</h2>
+          <p class="copy">{{user.likes}}</p>
+        </div>
+      </div>
+    </main>
+  </div>

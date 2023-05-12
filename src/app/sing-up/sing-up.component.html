@@ -1,0 +1,38 @@
+
+<div fxLayoutAlign = "center center" fxFlexFill>
+    
+    <mat-card fxFlex = "25">
+        <mat-card-header fxLayoutAlign = "center">REGISTER</mat-card-header>
+        <form fxLayoutAlign = "stretch" fxLayout = "column" [formGroup] = "registerform" (ngSubmt) = "proceedRegisteration()">
+            <!-- <mat-form-field>
+              <input matInput name = "userName" placeholder="Username" formControlName = "id">
+            </mat-form-field> -->
+            <mat-form-field>
+                <input matInput name = "name" placeholder="Name" formControlName = "name">
+              </mat-form-field>
+
+            <mat-form-field>
+                <input matInput name = "password" type = "password" matInput placeholder="password" formControlName = "password">
+            </mat-form-field>
+            <mat-form-field>
+                <input matInput name = "passwordc" type = "password" matInput placeholder="password" formControlName = "password2">
+            </mat-form-field>
+            <mat-form-field>
+                <input matInput name = "email" placeholder="E-mail" formControlName = "email">
+            </mat-form-field>
+
+            <!-- <div>
+                <mat-radio-group aria-label="Select an option">
+                    <mat-radio-button value="male">Male</mat-radio-button>
+                    <mat-radio-button value="female">Female</mat-radio-button>
+                  </mat-radio-group>                  
+            </div> -->
+
+            <div>
+                <button mat-button type = "submit" (click) = "proceedRegisteration()">Sing-up</button> 
+                <!-- <button mat-button type (click) = "gotologin()">Login</button>  -->
+            </div>
+          </form>
+          
+    </mat-card>
+</div>

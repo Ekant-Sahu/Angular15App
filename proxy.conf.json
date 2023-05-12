@@ -1,0 +1,6 @@
+{
+    "/api": {
+      "target": "https://robotixbackend.onrender.com/api/user/login/",
+      "secure": false
+    }
+  }

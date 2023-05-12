@@ -3,4 +3,8 @@
     <div class="spacer"></div>
     <a routerLink="/home" class="home">Home</a>
     <a routerLink="/project" class="project">Project</a>
+    <div *ngIf="is_admin">
+    
+    <button mat-flat-button color="primary" (click)="clear()" >logout</button>
+</div>
 </mat-toolbar>
