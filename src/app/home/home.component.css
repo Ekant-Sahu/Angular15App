@@ -9,7 +9,7 @@
     align-items: center;
 }
 .home-contaner{
-    width: 70vw;
+    width: 80vw;
     display: flex;
     justify-content: space-between;
 }
@@ -33,9 +33,18 @@
 .mainRobot{
 
 }
-@media screen and (max-width: 992px){
+@media screen and (max-width: 1200px){
+    .home-title{ 
+        font-size: 3em;  
+    }
+    .home-nit{
+        font-size: 1.2em;
+    }
+}
+@media screen and (max-width: 1000px){
     .home-contaner{
         width: 90vw;
+        justify-content: space-around;
     }
     .home-title{ 
         font-size: 2.5em;

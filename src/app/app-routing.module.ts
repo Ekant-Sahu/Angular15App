@@ -9,6 +9,7 @@ import { AdminComponent } from './admin/admin.component';
 import { AuthGuard } from './guar/auth.guard';
 import { TexteditorComponent } from './texteditor/texteditor.component';
 import { AboutComponent } from './about/about.component';
+import { ContactComponent } from './contact/contact.component';
 const routes: Routes = [
   {
     path: '',
@@ -27,6 +28,10 @@ const routes: Routes = [
   {
     path:'about',
     component: AboutComponent
+  },
+  {
+    path:'contact',
+    component:  ContactComponent
   },
   {
     path:'project',
