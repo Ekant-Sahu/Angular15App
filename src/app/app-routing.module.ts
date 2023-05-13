@@ -8,7 +8,7 @@ import { LoginComponent } from './login/login.component';
 import { AdminComponent } from './admin/admin.component';
 import { AuthGuard } from './guar/auth.guard';
 import { TexteditorComponent } from './texteditor/texteditor.component';
-
+import { AboutComponent } from './about/about.component';
 const routes: Routes = [
   {
     path: '',
@@ -23,6 +23,10 @@ const routes: Routes = [
     path:'admin',
     component: AdminComponent,
     canActivate:[AuthGuard]
+  },
+  {
+    path:'about',
+    component: AboutComponent
   },
   {
     path:'project',

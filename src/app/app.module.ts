@@ -24,6 +24,7 @@ import {MatRadioModule} from '@angular/material/radio';
 import { TexteditorComponent } from './texteditor/texteditor.component';
 import {HTTP_INTERCEPTORS} from '@angular/common/http';
 import { TokenInterceptorInterceptor } from './interceptor/token-interceptor.interceptor';
+import { AboutComponent } from './about/about.component';
 
 
 
@@ -38,7 +39,8 @@ import { TokenInterceptorInterceptor } from './interceptor/token-interceptor.int
     SingUpComponent,
     LoginComponent,
     AdminComponent,
-    TexteditorComponent
+    TexteditorComponent,
+    AboutComponent
   ],
   imports: [
     BrowserModule,
