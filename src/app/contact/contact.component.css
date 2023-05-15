@@ -1,0 +1,118 @@
+.contact-head{
+    background-color: rgb(87, 87, 191);
+    width: 100%;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.contact-head-text{
+    color: azure;
+    font-size: 3em;
+    font-weight: 600;
+}
+.contact-body{
+
+}
+.contact-contaner{
+    background-color: rgb(45, 31, 89);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.c-form-center{
+   
+    background: #31377d;
+    box-shadow: 0px 11px 19.2px 0.8px rgba(66, 58, 232, 0.1);
+    border-radius: 5px;
+    width: 600px;
+    margin: 3em;
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+}
+.form-head{
+    margin: 0.9em;
+    color: azure;
+    color: #bdb9f0;
+    font-size: 2rem;
+    font-weight: 400;
+    display: flex;
+    justify-content: center;
+}
+p{  
+    color: aliceblue;
+    font-size: 1.5em;
+}
+.fill{ width: 100%;
+}
+.message{
+    height: 200px;
+}
+.c-form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 2em;
+    width: 100%;
+}
+.MESSAGE-bt{
+    background-color: rgb(133, 44, 216);
+    padding: 1em;
+    color: azure;
+    font-size: 1.5em;
+}
+
+.MESSAGE-bt{
+    background-color: rgb(133, 44, 216);
+   border-radius: 3em;
+   width: 170px;
+   padding: 1em;
+    color: azure;
+    font-size: 1em;
+    font-weight: 500;
+    margin-bottom: 2rem;
+
+    display: flex;
+    justify-content: center;
+}
+@media screen and (max-width: 992px){
+    .c-img{
+     display: none;
+    }
+}
+.contact-q{
+    border: 1px solid  rgb(45, 31, 89);
+    background-color: rgb(45, 31, 89);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 300px;
+}
+.c-contaner{
+   margin-top: 2em;
+    display: flex;
+    flex-direction: column;
+}
+.c-line{
+    margin: 1em; 
+}
+.f{
+    display: flex;
+    flex-direction: row;
+}
+.c-l {
+    color: #bdb9f0;
+}
+.h{
+color: white;
+font-size: 2em;
+font-weight: 400;
+}
+.hh{
+    color: white;
+    font-weight: 600;
+    font-size: 3em;
+}
