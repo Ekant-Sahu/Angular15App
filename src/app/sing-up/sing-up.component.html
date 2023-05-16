@@ -1,8 +1,8 @@
 
-<div fxLayoutAlign = "center center" fxFlexFill>
+<div class="login-bg" fxLayoutAlign = "center center" fxFlexFill>
     
-    <mat-card fxFlex = "25">
-        <mat-card-header fxLayoutAlign = "center">REGISTER</mat-card-header>
+    <mat-card class="log-body" fxFlex = "25">
+        <mat-card-header class="log-head" fxLayoutAlign = "center">REGISTER</mat-card-header>
         <form fxLayoutAlign = "stretch" fxLayout = "column" [formGroup] = "registerform" (ngSubmt) = "proceedRegisteration()">
             <!-- <mat-form-field>
               <input matInput name = "userName" placeholder="Username" formControlName = "id">
@@ -29,7 +29,7 @@
             </div> -->
 
             <div>
-                <button mat-button type = "submit" (click) = "proceedRegisteration()">Sing-up</button> 
+                <button class="log-bt" mat-button type = "submit" (click) = "proceedRegisteration()">Sing-up</button> 
                 <!-- <button mat-button type (click) = "gotologin()">Login</button>  -->
             </div>
           </form>

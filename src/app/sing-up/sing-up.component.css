@@ -1,0 +1,18 @@
+.login-bg{
+    background-color: rgb(45, 31, 89);
+}
+.log-body{
+    min-width: 400px;
+    background-color: #31377d;
+    padding: 4rem;
+}
+.log-head{
+    color: azure;
+    font-size: 2em;
+    margin-bottom: 1em;
+}
+.log-bt{
+    color: #31377d;
+    font-size: 1.3em;
+    background-color: white;
+}
