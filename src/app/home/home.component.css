@@ -22,6 +22,7 @@
     }
   }
 .home{ 
+    width: 100%;
     background: #31377d;
     padding: 2em;
     font-Family: '"Josefin Sans", san serif';

@@ -1,13 +1,35 @@
-<mat-toolbar color = 'primary'>
-    <span>My Application</span>
+<!-- <mat-toolbar color = 'primary'>
+    <span>ROBOTICS</span>
     <div class="spacer"></div>
     <a routerLink="/home" class="home">Home</a>
     <a routerLink="/about" class="about">about</a>
     <a routerLink="/contact" class="contact">contact</a>
     <a routerLink="/project" class="project">Project</a>
     
-    <div *ngIf="is_admin">
     
+</mat-toolbar> -->
+<div class="nav">
+    <input type="checkbox" id="nav-check">
+    <div class="nav-header">
+      <div class="nav-title">
+        ROBOTICS
+      </div>
+    </div>
+    <div class="nav-btn">
+      <label for="nav-check">
+        <span></span>
+        <span></span>
+        <span></span>
+      </label>
+    </div>
+    
+    <div class="nav-links">
+        <a routerLink="/home" class="home">Home</a>
+        <a routerLink="/about" class="about">about</a>
+        <a routerLink="/contact" class="contact">contact</a>
+        <a routerLink="/project" class="project">Project</a>
+    </div>
+  </div>
+  <div *ngIf="is_admin">
     <button mat-flat-button color="primary" (click)="clear()" >logout</button>
 </div>
-</mat-toolbar>

@@ -1,5 +1,6 @@
 .about-bg{
-    background: #31377d;
+    width: 100%;
+ background: #31377d;
    display: flex; 
    justify-content: center;
    padding: 1rem;
