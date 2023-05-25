@@ -15,7 +15,7 @@
 
 }
 .contact-contaner{
-    background-color: rgb(45, 31, 89);
+    /* background-color: rgb(45, 31, 89); */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -84,19 +84,25 @@ p{
     }
 }
 .contact-q{
-    border: 1px solid  rgb(45, 31, 89);
-    background-color: rgb(45, 31, 89);
+    /* border: 1px solid  rgb(45, 31, 89);
+    background-color: rgb(45, 31, 89); */
+   
     display: flex;
     justify-content: center;
     align-items: center;
     height: 300px;
 }
-.c-contaner{
+.c-contaner{ 
+    border-radius: 30px;
+    background-color: rgba(240, 248, 255, 0.785);
+    padding: 1em;
    margin-top: 2em;
     display: flex;
     flex-direction: column;
+    
 }
 .c-line{
+    
     margin: 1em; 
 }
 .f{
@@ -104,15 +110,15 @@ p{
     flex-direction: row;
 }
 .c-l {
-    color: #bdb9f0;
+    color: #404044;
 }
 .h{
-color: white;
+    color: black;
 font-size: 2em;
 font-weight: 400;
 }
 .hh{
-    color: white;
+    color: black;
     font-weight: 600;
     font-size: 3em;
 }

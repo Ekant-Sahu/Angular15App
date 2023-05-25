@@ -23,7 +23,7 @@
   }
 .home{ 
     width: 100%;
-    background: #31377d;
+    /* background: #31377d; */
     padding: 2em;
     font-Family: '"Josefin Sans", san serif';
     display: flex;
@@ -31,7 +31,10 @@
     align-items: center;
 }
 .home-contaner{
+   background-color: rgba(255, 255, 255, 0.229);
+   border-radius: 30px;
     width: 80vw;
+    padding: 2rem;
     display: flex;
     justify-content: space-between;
 }
