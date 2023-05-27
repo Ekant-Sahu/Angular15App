@@ -12,6 +12,7 @@ a{
  
   
   .nav {
+    z-index: 999;
     height: 90px;
     background-color: #48509b;
     position: relative;
@@ -94,7 +95,7 @@ a{
       height: 0px;
     }
     .nav > #nav-check:checked ~ .nav-links {
-      height: calc(100vh - 100px);
+      height: calc(50vh);
       overflow-y: auto;
     }
   }

@@ -3,6 +3,7 @@
 }
 .log-body{
     min-width: 400px;
+    border-radius: 20px;
     background-color: #31377d;
     padding: 4rem;
 }
