@@ -12,9 +12,11 @@ a{
  
   
   .nav {
+    width: 100vw;
     z-index: 999;
     height: 90px;
-    background-color: #48509b;
+    background-color: #f7f7f773;
+    backdrop-filter: blur(3px);
     position: relative;
   }
   
@@ -25,7 +27,7 @@ a{
   .nav > .nav-header > .nav-title {
     display: inline-block;
     font-size: 22px;
-    color: #fff;
+    color: #fafafa;
     padding: 10px 10px 10px 10px;
   }
   
@@ -43,10 +45,11 @@ a{
     display: inline-block;
     padding: 13px 10px 13px 10px;
     text-decoration: none;
-    color: #efefef;
+    color: #ffffff;
   }
   
   .nav > .nav-links > a:hover {
+    border-radius: 20PX;
     background-color: rgba(0, 0, 0, 0.3);
   }
   
@@ -54,7 +57,7 @@ a{
     display: none;
   }
   
-  @media (max-width:600px) {
+  @media (max-width:800px) {
     .nav > .nav-btn {
       display: inline-block;
       position: absolute;

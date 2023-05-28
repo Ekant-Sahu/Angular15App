@@ -1,5 +1,7 @@
 .login-bg{
-    background-color: rgb(45, 31, 89);
+    /* background-color: rgb(45, 31, 89); */
+    display: flex;
+    flex-direction:row;
 }
 .log-body{
     min-width: 400px;
@@ -16,3 +18,7 @@
     font-size: 1.3em;
     background-color: white;
 }
+
+
+
+/* ================================================================ */

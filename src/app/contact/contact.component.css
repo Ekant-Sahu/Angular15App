@@ -1,15 +1,65 @@
-.contact-head{
-    background-color: rgb(87, 87, 191);
+/* =====svg=========================================================== */
+
+.contact-wave {
+    position: relative;
+    top: 0;
+    left: 0;
     width: 100%;
-    height: 200px;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+}
+
+.contact-wave svg {
+    position: relative;
+    display: block;
+    width: calc(158% + 1.3px);
+    height: 113px;
+}
+
+.contact-wave .shape-fill {
+    fill: #746b6bd8;
+}
+
+
+
+
+.contact-wave2 {
+    position:relative;
+    top: -110px;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+}
+
+.contact-wave2 svg {
+    position: relative;
+    display: block;
+    width: calc(158% + 1.3px);
+    height: 79px;
+}
+
+.contact-wave2 .shape-fill {
+    fill: #ffffffb1;
+}
+/* ================================================================ */
+.contact-head{
+    background-color: rgba(49, 49, 52, 0.344);
+    width: 100%;
+    
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
 }
 .contact-head-text{
+    transform: translate(0,-50px);
     color: azure;
     font-size: 3em;
     font-weight: 600;
+    
 }
 .contact-body{
 
@@ -23,7 +73,7 @@
 }
 .c-form-center{
    
-    background: #31377d;
+    background: #323232;
     box-shadow: 0px 11px 19.2px 0.8px rgba(66, 58, 232, 0.1);
     border-radius: 5px;
     width: 600px;
