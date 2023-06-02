@@ -377,7 +377,7 @@ margin: 15px;
     font-size: 0.9em;
 }
 .card-icon{
-  width: 1.2em;
+  width: 1em;
 }
 .icons{
   color: black;
@@ -389,7 +389,7 @@ margin: 15px;
     
 }
 .icons span{
-  font-size: 1.5em;
+  font-size: 1em;
    position: relative;
    top: -2px;
 }
