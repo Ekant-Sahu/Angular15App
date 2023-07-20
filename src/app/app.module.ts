@@ -26,6 +26,7 @@ import {HTTP_INTERCEPTORS} from '@angular/common/http';
 import { TokenInterceptorInterceptor } from './interceptor/token-interceptor.interceptor';
 import { AboutComponent } from './about/about.component';
 import { ContactComponent } from './contact/contact.component';
+import { ProjectdetailsComponent } from './projectdetails/projectdetails.component';
 
 
 
@@ -44,6 +45,7 @@ import { ContactComponent } from './contact/contact.component';
     TexteditorComponent,
     AboutComponent,
     ContactComponent,
+    ProjectdetailsComponent,
    
   ],
   imports: [
