@@ -1,5 +1,5 @@
 
-<p class="team-head-text" id="ot-wrapper"><span id="ot-text">Project List</span></p>
+<!-- <p class="team-head-text" id="ot-wrapper"><span id="ot-text">Project List</span></p>
   <div *ngFor="let user of dataSource" style="text-align:center">
     <main class="page-content">
       <div class="card">
@@ -9,21 +9,21 @@
         </div>
       </div>
     </main>
-  </div>
+  </div> -->
 
 
-  <div class="card1 ">
+<div class="card1" *ngFor="let user of dataSource">
     <div class="Card_cantaner"> 
      <div class="card_img"></div>
      <div class="card_contex">
          <div class="card_user"></div>
-         <div class="card_text"><b>Hack Game</b><p>alax</p></div>
+         <div class="card_text"><b>{{user.title}}</b><p>alax</p></div>
          <div class="card_menu"><img  class=" card-icon" src="assets/card-icon/pin.png"></div>
          <div class="icons_menu" ><img  class="card-icon" src="assets/card-icon/menu.png"> </div>
      </div>
      <div class="display">
         <div class="card_icon">
-          <div class="icons"><img  class="card-icon" src="assets/card-icon/like.png"> <span>2</span></div>
+          <div class="icons"><img  class="card-icon" src="assets/card-icon/like.png"> <span>{{user.likes}}</span></div>
           <div class="icons"><img  class="card-icon" src="assets/card-icon/comment.png"> <span>3</span></div>
         </div>
         </div>

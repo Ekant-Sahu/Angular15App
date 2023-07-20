@@ -32,6 +32,7 @@ import { ProjectdetailsComponent } from './projectdetails/projectdetails.compone
 
 
 
+
 @NgModule({
   declarations: [
     AppComponent,
