@@ -1,12 +1,16 @@
 .login-bg{
     /* background-color: rgb(45, 31, 89); */
+    width: 100vw;
+    
     display: flex;
     flex-direction:row;
 }
 .log-body{
-    min-width: 400px;
+    margin: auto;
+    margin-top: 1em;
+    min-width: 350px;
     border-radius: 20px;
-    background-color: #31377d;
+    background-color: #56575bc3;
     padding: 4rem;
 }
 .log-head{

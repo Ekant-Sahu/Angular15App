@@ -25,10 +25,10 @@
   /* ============================ */
 .home{ 
     transform: translate(0,-170px);
-    width: 90%;
+    width: 100%;
     /* background: #31377d; */
-    
-    padding: 2em;
+   
+   
     font-Family: '"Josefin Sans", san serif';
     display: flex;
     justify-content: center;
