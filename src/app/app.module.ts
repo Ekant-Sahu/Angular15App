@@ -26,7 +26,8 @@ import {HTTP_INTERCEPTORS} from '@angular/common/http';
 import { TokenInterceptorInterceptor } from './interceptor/token-interceptor.interceptor';
 import { AboutComponent } from './about/about.component';
 import { ContactComponent } from './contact/contact.component';
-
+import {IvyCarouselModule} from 'angular-responsive-carousel';
+import { FooterComponent } from './footer/footer.component';
 
 
 
@@ -45,6 +46,7 @@ import { ContactComponent } from './contact/contact.component';
     TexteditorComponent,
     AboutComponent,
     ContactComponent,
+    FooterComponent,
    
   ],
   imports: [
@@ -61,6 +63,7 @@ import { ContactComponent } from './contact/contact.component';
     HttpClientModule,
     ReactiveFormsModule,
     MatRadioModule,
+    // IvyCarouselModule,
     MatTableModule,
     ToastrModule.forRoot(
       {

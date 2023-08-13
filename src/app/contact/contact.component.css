@@ -1,4 +1,6 @@
 /* =====svg=========================================================== */
+ 
+
 
 .contact-wave {
     position: relative;
@@ -113,6 +115,8 @@ p{
     padding: 1em;
     color: azure;
     font-size: 1.5em;
+    margin: 0 auto; 
+    /* to center  */
 }
 
 .MESSAGE-bt{
@@ -136,7 +140,8 @@ p{
 .contact-q{
     /* border: 1px solid  rgb(45, 31, 89);
     background-color: rgb(45, 31, 89); */
-   
+    padding-bottom: 200px;
+    /* ekant changed padding   */
     display: flex;
     justify-content: center;
     align-items: center;

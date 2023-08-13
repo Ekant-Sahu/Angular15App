@@ -1,97 +1,291 @@
-.about-bg{
-    width: 90vw;
- /* background: #31377d; */
-   display: flex; 
-   justify-content: center;
-   padding: 1rem;
-}
-.about-container{
-background-color: rgba(240, 248, 255, 0.752);
-padding: 2em;
-max-width: 80vw;
-display: flex;
-flex-direction: row;
-justify-content: space-between;
-padding: 0.5rem;
-border-radius: 20px;
-box-shadow: 10px 13px 10px 5px #474646;
-}
-@media screen and (max-width: 992px) {
-    .about-container{
-        flex-direction: column;
-        }
-  }
-.about-img-center{
-   width: 40%;
-   max-width: 350px; 
-   align-self: center;
-   margin-left: 1em;
-}
-.about-img{
+#about-section{
+    display: flex;
+    justify-content: flex-start;
     width: 100%;
-    height: max-content;
+    padding: 0;
+    margin: 0;
+    font-size: 18px;
+    color: #bdb9f0;
+    line-height: 28px;
+    overflow-x: hidden;
+    font-family: "Open Sans", sans-serif;
+    background: #202342;
+    
+    
+}
+
+
+.about-countainer{
+    /* change this */
+    padding: 50px;
+    display: flex;
+    flex-direction: row;
+    width: 70%;
+    justify-content: flex-start;
+}
+
+.arduino-image{
+    min-width: 800px;
+    
+    /* animation-fill-mode: both;
+    animation-duration: 1000ms;
+    animation-delay: 0ms;
+    animation-iteration-count: 1;
+    opacity: 1;
+    animation-name: react-reveal-103608975972335-1; */
+    
+}
+.arduino-image img{
+    max-width: 100%;
+
+}
+
+.content{
+    
+    justify-content: center;
+}
+
+.head{
+    margin-bottom: 38px;
+    color: #ff8a00;
+    font-family: "Josefin Sans", sans-serif;
+    font-weight: 700;
+    margin: 0 auto;
+}
+
+.header{
+    color: #fff;
+    font-family: "Josefin Sans", sans-serif;
+    font-weight: 100000;
+    margin: 0 auto; 
+
+}
+
+.counter{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    
+}
+
+.box{
+    margin: 40px; 
+    /* chnage this */
+
+}
+
+@media (max-width: 620px) {
+    .counter{
+        flex-direction: column;
+    }
+    
+}
+
+/* .box img{
+    max-width: 100%;
+} */
+
+
+/* spons css */
+#spons-section{
+    background: #31377d;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.spons-header{
+    margin: 0 auto;
+    margin-bottom: 30px;
+    color: #fff;
+    font-family: "Josefin Sans", sans-serif;
+    font-weight: 100000; 
+}
+
+
+.images{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.images img{
+    height: 60%;
+    width: 40%;
+    padding-left: 40px;
+}
+
+
+/* team css */
+
+#team{
+    display: flex;
+    justify-content: flex-start;
+    
+    padding: 50px;
+    margin: 0;
+    font-size: 18px;
+    color: #bdb9f0;
+    line-height: 28px;
+    overflow-x: hidden;
+    font-family: "Open Sans", sans-serif;
+    background: #202342;
+}
+
+.team-countainer{
+    display: flex;
+    flex-direction: row;
+    
+}
+
+.team-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     align-items: center;
 }
-.about-context{
-    width: 50%;
-    max-width: 500px;
-    margin-left: auto;
-    margin-right: 3em;
-}
-.ab-start{
-    font-size: 1.5rem;
-    font-weight: 400;
-    margin-bottom: 1em;
-    margin-top: 1em;
-    transform: translate(-5.5em, 0);
-}
-.ab-head{
-    font-size: 2.5em;
-    font-weight: 600;
-}
-.ab-text{
-    margin: 1px;
-    padding: 1px;
-    width: 90%;
-}
-@media screen and (max-width: 992px) {
-    .about-container{
-        flex-direction: column;
-        }
-        .about-img-center{
-            width: 60%;}
-        .ab-start{
-            
-            transform: translate(0, 0);
-        }
-        .about-context{
-            width: 100%;
-            margin: 2em;
-        }
+
+/* card css */
+/* button {
+    all: unset;
+    cursor: pointer;
+    padding: 0.5em;
+    outline: 1px solid #d4aa00;
+    color: #d4aa00;
   }
-.counter{
- max-height: 60px ;
-   min-height: 50px;
-   display: flex;
-   justify-content: center;
-   margin-bottom: 1em;
-   
-}
-.line{
-    border-right: 5px solid rgb(75, 71, 195);
-}
-.count{
-    margin-top: 1em;
+  
+  button:hover {
+    all: unset;
+    cursor: pointer;
+    padding: 0.5em;
+    color: white;
+    background-color: #d4aa00;
+  }
+   */
+  .container {
+    width: 100%;
     display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+  }
+  
+  .card img {
+    width: 100%;
+    max-width: 350px;
+    height: 300px;
+    object-fit: cover;
+    backface-visibility: hidden;
+  }
+  
+  /* Styling Cards */
+  
+  .card {
+    width: 25%;
+    max-width: 350px;
+    height: 300px;
+    background-color: transparent;
+  }
+  
+  #card1,
+  #card3 {
+    overflow: hidden;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.25);
+  }
+  
+  #card2 {
+    perspective: 1000px;
+  }
+  .inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.25);
+  
+    transform-style: preserve-3d;
+    transition: transform 0.75s;
+  }
+  .inner * {
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+  }
+  
+  /* Card Covers */
+  .cover {
+    width: 100%;
+    max-width: 350px;
+    height: 300px;
+    background-color: white;
+    overflow: hidden;
+  
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  
+    transition: all 0.75s ease-in-out;
+  }
+  
+  /* Card 1 - slide from top */
+  /* .cover1 {
+    position: relative;
+    top: -201%;
+  }
+  
+  .card:hover .cover1 {
+    top: -101%;
+  } */
+  
+  /* Card 2 - Flip 180 */
+  .cover2 {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    top: -101%;
+    transform: rotateY(180deg);
+  }
+  .card:hover .inner {
+    transform: rotateY(180deg);
+  }
+  
+  /* Card 3 - slide from right */
+  /* .cover3 {
+    position: relative;
+    right: -200%;
+    top: -101%;
+  }
+  
+  .card:hover .cover3 {
+    right: 0%;
+  } */
+  
+
+
+
+
+
+  @media (max-width:1200px) {
+    .about-countainer{
+        flex-direction: column;
+        padding: 25px;
+    }
+
+    .images{
+        flex-direction: column;
+        height: 25%;
+        width: 25%;
+        margin-left: 50px;
+    }
+    
+    
+    
 }
-.count-1,.count-2,.count-3{ 
-}
-.count-no{
-    font-size: 2.5em;
-    font-weight: 600;
-}
-.count-name{
-    margin-top: 1rem;
-}
+
+
+
+
+
 
 
