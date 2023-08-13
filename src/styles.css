@@ -3,7 +3,7 @@
 html, body { height: 100%; }
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; 
 
-    /* background-color: #000000;
+    background-color: #000000;
     opacity: 1;
     background-image:  radial-gradient(#ffffff 1.05px, transparent 1.05px), radial-gradient(#ffffff 1.05px, #000000 1.05px);
     background-size: 42px 42px;

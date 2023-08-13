@@ -393,7 +393,7 @@ margin: 15px;
    position: relative;
    top: -2px;
 }
-.display { display: none; }
+/* .display { display: none; } */
 .Card_cantaner:hover .display { display: block; }
 @media (max-width: 845px){
   .icons{
