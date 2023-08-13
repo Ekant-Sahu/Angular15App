@@ -48,7 +48,6 @@
 .contact-head{
     background-color: rgba(49, 49, 52, 0.344);
     width: 100%;
-    
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -171,4 +170,33 @@ font-weight: 400;
     color: black;
     font-weight: 600;
     font-size: 3em;
+}
+/* ================================================================` */
+.footer {
+    margin-top: 1em;
+    position: relative;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+}
+
+.footer svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 161px;
+}
+
+.footer .shape-fill {
+    fill: #5c60a8;
+}
+@media screen and (max-width: 500px){
+    .footer svg {
+   
+        width: calc(100% + 1.3px);
+        height: 62px;
+    }
 }

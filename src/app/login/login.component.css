@@ -1,7 +1,6 @@
 .login-bg{
     /* background-color: rgb(45, 31, 89); */
     width: 100vw;
-    
     display: flex;
     flex-direction:row;
 }

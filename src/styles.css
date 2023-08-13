@@ -1,12 +1,17 @@
 /* You can add global styles to this file, and also import other style files */
 
-html, body { height: 100vw; padding: 0; }
+html, body { 
+    
+    /* overflow: hidden;  */
+     padding: 0; }
 body { 
      margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; 
 /* overflow: hidden; */
-    background-color: #f1e7e7;
-    opacity: 1;
+    background-color: rgb(32,35,66);
+   z-index: -999;
+
+    /* opacity: 1;
     background-image:  radial-gradient(#ffffff 1.05px, transparent 1.05px), radial-gradient(#ffffff 1.05px, #000000 1.05px);
     background-size: 42px 42px;
-    background-position: 0 0,21px 21px;
+    background-position: 0 0,21px 21px; */
 }

@@ -12,12 +12,17 @@ a{
  
   
   .nav {
-    width: 100%;
+    /* width: 100vw; */
+    margin: 0;
     z-index: 999;
     padding: 1em;
     background-color: #f7f7f773;
     backdrop-filter: blur(3px);
     position: relative;
+    height: 30px;
+  }
+  .nav-links{
+   
   }
   
   .nav > .nav-header {
@@ -39,6 +44,8 @@ a{
     display: inline;
     float: right;
     font-size: 18px;
+    top: -10px;
+    transform: translateY(-20px);
   }
   
   .nav > .nav-links > a {
@@ -49,7 +56,7 @@ a{
   }
   
   .nav > .nav-links > a:hover {
-    border-radius: 20PX;
+    border-radius: 5px;
     background-color: rgba(0, 0, 0, 0.3);
   }
   
@@ -57,7 +64,7 @@ a{
     display: none;
   }
   
-  @media (max-width:800px) {
+  @media (max-width:850px) {
     .nav > .nav-btn {
       display: inline-block;
       position: absolute;

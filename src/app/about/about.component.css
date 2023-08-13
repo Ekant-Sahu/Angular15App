@@ -1,9 +1,11 @@
 .about-bg{
-    width: 90vw;
- /* background: #31377d; */
+    width: 100%;
+ background:rgb(49,55,125);
    display: flex; 
    justify-content: center;
-   padding: 1rem;
+padding-top: 5em;
+padding-bottom: 5em;
+   
 }
 .about-container{
 background-color: rgba(240, 248, 255, 0.752);
