@@ -127,24 +127,23 @@
 }
 .svg-home-in{
     width: 100wv;
+    
 }
 .svg-home svg {
     position: relative;
     display: block;
     width: calc(145% + 1.3px);
-    
     height: 279px;
-    /* transform: rotateY(180deg); */
 }
 
 .svg-home .shape-fill {
-    width: 100wv;
     fill: #ffffffe0;
+    
 }
 /* =========================svg-bg======= */
 .svg-home2 {
     position: relative;
-    bottom: 0;
+    bottom: -5px;
     left: 0;
     width: 100%;
     overflow: hidden;
@@ -182,3 +181,6 @@
     display: none;
    }
 }
+
+
+/* ================================================================ */
