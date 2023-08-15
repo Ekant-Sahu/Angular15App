@@ -21,9 +21,7 @@
       background-position: 200% center;
     }
   }
-.Home{
- 
-}
+
   /* ============================ */
 
 
@@ -120,31 +118,85 @@
 
 
 /* =========================svg-bg======= */
-.svg-home {
+.Home-svg{
+    background-image: url(../../assets/images/account-bg.jpg);
+    height: 400px;
+}
+.svg-top {
     position: relative;
-    top: -42px;
+    top: 0;
     left: 0;
     width: 100%;
     overflow: hidden;
-    line-height: 0;   
+    line-height: 0;
+    transform: translate(0,-43px);
+    height: 100px;
 }
-.svg-home-in{
-    width: 100wv;
+
+.svg-top svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 100px;
+}
+
+.svg-top .shape-fill {
+    fill: #ffffff65;
+    /* fill: #202342 ;  */
     
 }
+.svg-home {
+    position: relative;
+    bottom: 0px;
+    left: 0;
+    width: 100%;
+    /* overflow: hidden; */
+    line-height: 0;
+    transform: rotate(180deg);
+    height: 1px;
+}
+
 .svg-home svg {
     position: relative;
     display: block;
-    width: calc(145% + 1.3px);
-    height: 279px;
+    width: calc(152% + 1.3px);
+    height: 300px;
+    transform: translate(0,-1px); 
 }
 
 .svg-home .shape-fill {
-    fill: #ffffffe0;
+    /* fill: #ffffffe0; */
+    fill: #202342 ; 
     
 }
-/* =========================svg-bg======= */
 .svg-home2 {
+    position: relative;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    /* overflow: hidden; */
+    line-height: 0;
+    transform: rotate(180deg);
+    height: 255px;
+}
+
+.svg-home2 svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 350px;
+    /* transform: translate(0,194px); */
+}
+
+.svg-home2 .shape-fill {
+    fill: #20234282 ; 
+     /* fill: #ffffff43; */
+}
+
+
+
+/* =========================svg-bg for about======= */
+.svg-home-arrow {
     position: relative;
     bottom: -5px;
     left: 0;
@@ -154,14 +206,14 @@
     transform: rotate(180deg);
 }
 
-.svg-home2 svg {
+.svg-home2-arrow svg {
     position: relative;
     display: block;
     width: calc(180% + 1.3px);
     height: 309px;
 }
 
-.svg-home2 .shape-fill {
+.svg-home_arrow .shape-fill {
     fill: #31377D;
 }
 
