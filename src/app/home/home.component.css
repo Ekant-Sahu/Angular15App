@@ -161,7 +161,7 @@
     display: block;
     width: calc(152% + 1.3px);
     height: 300px;
-    transform: translate(0,-1px); 
+    transform: translate(0,-3px); 
 }
 
 .svg-home .shape-fill {
@@ -193,6 +193,17 @@
      /* fill: #ffffff43; */
 }
 
+@media screen and (max-width: 850px){
+    .svg-top {
+        transform: translate(0,0px);
+    }
+    .svg-home2 svg {
+        transform: translate(0,-45px);
+    }
+    .svg-home svg {
+        transform: translate(0,-45px);
+    }
+}
 
 
 /* =========================svg-bg for about======= */
