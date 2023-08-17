@@ -28,6 +28,7 @@ import { AboutComponent } from './about/about.component';
 import { ContactComponent } from './contact/contact.component';
 import {IvyCarouselModule} from 'angular-responsive-carousel';
 import { FooterComponent } from './footer/footer.component';
+import { EventComponent } from './event/event.component';
 
 
 
@@ -47,6 +48,7 @@ import { FooterComponent } from './footer/footer.component';
     AboutComponent,
     ContactComponent,
     FooterComponent,
+    EventComponent,
    
   ],
   imports: [
@@ -63,7 +65,7 @@ import { FooterComponent } from './footer/footer.component';
     HttpClientModule,
     ReactiveFormsModule,
     MatRadioModule,
-    // IvyCarouselModule,
+    IvyCarouselModule,
     MatTableModule,
     ToastrModule.forRoot(
       {

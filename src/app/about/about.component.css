@@ -4,9 +4,9 @@
     width: 100%;
     padding: 0;
     margin: 0;
-    font-size: 18px;
+    font-size: 22px;
     color: #bdb9f0;
-    line-height: 28px;
+    line-height: 35px;
     overflow-x: hidden;
     font-family: "Open Sans", sans-serif;
     background: #202342;
@@ -20,13 +20,14 @@
     padding: 50px;
     display: flex;
     flex-direction: row;
-    width: 70%;
-    justify-content: flex-start;
+    width: 80%;
+    justify-content: center;
+    
 }
 
 .arduino-image{
     min-width: 800px;
-    
+    /* margin-top: 100px; */
     /* animation-fill-mode: both;
     animation-duration: 1000ms;
     animation-delay: 0ms;
@@ -48,16 +49,18 @@
 .head{
     margin-bottom: 38px;
     color: #ff8a00;
+    font-size: 40px;
     font-family: "Josefin Sans", sans-serif;
     font-weight: 700;
-    margin: 0 auto;
+    margin: 0 auto 25px auto;
 }
 
 .header{
     color: #fff;
+    font-size: 40px;
     font-family: "Josefin Sans", sans-serif;
     font-weight: 100000;
-    margin: 0 auto; 
+    margin: 0 auto 25px auto; 
 
 }
 
@@ -87,40 +90,66 @@
 
 
 /* spons css */
-#spons-section{
-    background: #31377d;
-    padding-top: 40px;
-    padding-bottom: 40px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
-.spons-header{
-    margin: 0 auto;
-    margin-bottom: 30px;
-    color: #fff;
-    font-family: "Josefin Sans", sans-serif;
-    font-weight: 100000; 
+.carousel-client{
+  display: flex;
 }
 
+.section-title h2 {
+    text-align: center;
+    font-size: 30px;
+    font-weight: 600;
+    text-transform: uppercase;
+    padding-bottom: 6px;
+    color: #ffffff;
+    letter-spacing: 0.3px;
+    padding: 0;
+}
+.section-title::after {
+    content: "";
+    height: 3px;
+    background: #fbb900;
+    width: 80px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+/****************/
+/*	 BX-SLIDER 	*/
+/****************/
+section.client {
+	padding:4em 0em;
+	background-color: #31377d;
 
-.images{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
 }
-.about-context{
-    width: 70%;
-    max-width: 500px;
-    margin-left: auto;
-    margin-right: auto;
+section.client .section-title {
+	margin-bottom: 6em;
+}
+.bx-controls {
+	position: relative;
+}
+.bx-wrapper .bx-pager {
+    text-align: center;
+    padding-top: 30px;
+}
+.bx-wrapper .bx-pager .bx-pager-item, .bx-wrapper .bx-controls-auto .bx-controls-auto-item {
+    display: inline-block;
+    zoom: 1;
+    display: inline;
+}
+.bx-wrapper .bx-pager.bx-default-pager a {
+    background: #666;
+    text-indent: -9999px;
+    display: block;
+    width: 10px;
+    height: 10px;
+    margin: 0 5px;
+    outline: 0;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
 }
 
-.images img{
-    height: 60%;
-    width: 40%;
-    padding-left: 40px;
-}
 
 
 /* team css */
@@ -128,12 +157,11 @@
 #team{
     display: flex;
     justify-content: flex-start;
-    
     padding: 50px;
     margin: 0;
-    font-size: 18px;
+    font-size: 22px;
     color: #bdb9f0;
-    line-height: 28px;
+    line-height: 35px;
     overflow-x: hidden;
     font-family: "Open Sans", sans-serif;
     background: #202342;
@@ -142,7 +170,8 @@
 .team-countainer{
     display: flex;
     flex-direction: row;
-    
+    justify-content: center;
+    align-items: center;
 }
 
 .team-content{
@@ -152,120 +181,60 @@
     align-items: center;
 }
 
-/* card css */
-/* button {
-    all: unset;
-    cursor: pointer;
-    padding: 0.5em;
-    outline: 1px solid #d4aa00;
-    color: #d4aa00;
+/* card */
+.container{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* min-height: 100vh; */
+  gap: 20px;
+  flex-flow: row wrap;
+}
+@media (max-width:768px){
+  .card{
+      width: 100%;
+      margin-bottom: 20px;
   }
+}
+.card{
+  width: 300px;
+  height: 400px;
+  position: relative;
+  overflow: hidden;
+  border-radius: 10px;
+}
+.card img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.layer{
+  position: absolute;
+  top: 0;
+  transform: translateY(-400px);
+  visibility: hidden;
+  background-color: var(--color);
+  transition: 1s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #ffffff;
+  cursor: pointer;
+  cursor: pointer;
+  min-width: 100%;
+  min-height: 100%;
+  font-size: 2em;
+}
+.card:hover .layer{
+  visibility: visible;
+  transform: translateY(0);
+  top: 0;
+
+}
+
+
   
-  button:hover {
-    all: unset;
-    cursor: pointer;
-    padding: 0.5em;
-    color: white;
-    background-color: #d4aa00;
-  }
-   */
-  .container {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 50px;
-  }
-  
-  .card img {
-    width: 100%;
-    max-width: 350px;
-    height: 300px;
-    object-fit: cover;
-    backface-visibility: hidden;
-  }
-  
-  /* Styling Cards */
-  
-  .card {
-    width: 25%;
-    max-width: 350px;
-    height: 300px;
-    background-color: transparent;
-  }
-  
-  #card1,
-  #card3 {
-    overflow: hidden;
-    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.25);
-  }
-  
-  #card2 {
-    perspective: 1000px;
-  }
-  .inner {
-    position: relative;
-    width: 100%;
-    height: 100%;
-    text-align: center;
-    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.25);
-  
-    transform-style: preserve-3d;
-    transition: transform 0.75s;
-  }
-  .inner * {
-    -webkit-backface-visibility: hidden;
-    backface-visibility: hidden;
-  }
-  
-  /* Card Covers */
-  .cover {
-    width: 100%;
-    max-width: 350px;
-    height: 300px;
-    background-color: white;
-    overflow: hidden;
-  
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  
-    transition: all 0.75s ease-in-out;
-  }
-  
-  /* Card 1 - slide from top */
-  /* .cover1 {
-    position: relative;
-    top: -201%;
-  }
-  
-  .card:hover .cover1 {
-    top: -101%;
-  } */
-  
-  /* Card 2 - Flip 180 */
-  .cover2 {
-    position: relative;
-    width: 100%;
-    height: 100%;
-    top: -101%;
-    transform: rotateY(180deg);
-  }
-  .card:hover .inner {
-    transform: rotateY(180deg);
-  }
-  
-  /* Card 3 - slide from right */
-  /* .cover3 {
-    position: relative;
-    right: -200%;
-    top: -101%;
-  }
-  
-  .card:hover .cover3 {
-    right: 0%;
-  } */
+ 
   
 
 
@@ -277,6 +246,14 @@
         flex-direction: column;
         padding: 25px;
     }
+    .arduino-image{
+      max-width: 100%;
+    }
+    .arduino-image img{
+      max-width: 80%;
+      
+      margin-top: 10px;
+    }
 
     .images{
         flex-direction: column;
@@ -284,6 +261,14 @@
         width: 25%;
         margin-left: 50px;
     }
+    /* team media */
+    .team-countainer{
+      flex-direction: column;
+    }
+    .robo img{
+      width: 100%;
+    }
+    
     
     
     
