@@ -4,23 +4,25 @@
 
 .contact-wave {
     position: relative;
-    top: 0;
+    top:0;
     left: 0;
     width: 100%;
     overflow: hidden;
     line-height: 0;
-    transform: rotate(180deg);
+    height: 900px;
 }
 
 .contact-wave svg {
     position: relative;
     display: block;
-    width: calc(158% + 1.3px);
-    height: 113px;
+    width: calc(128% + 1.3px);
+    height: 103px;
 }
 
 .contact-wave .shape-fill {
-    fill: #746b6bd8;
+    fill: #ffffff90;
+    fill: rgb(32,35,66);
+
 }
 
 
@@ -28,35 +30,39 @@
 
 .contact-wave2 {
     position:relative;
-    top: -110px;
+    bottom: -20px;
     left: 0;
     width: 100%;
     overflow: hidden;
     line-height: 0;
     transform: rotate(180deg);
+    height: 869px;
+    
 }
 
 .contact-wave2 svg {
     position: relative;
     display: block;
-    width: calc(158% + 1.3px);
-    height: 79px;
+    width: calc(128% + 1.3px);
+    height: 191px;
 }
 
 .contact-wave2 .shape-fill {
-    fill: #ffffffb1;
+    fill: rgb(32,35,66);
 }
 /* ================================================================ */
 .contact-head{
-    background-color: rgba(49, 49, 52, 0.344);
+   background-image: url(src\assets\images\coming-soon.jpg);
     width: 100%;
+    height: 400px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+  
 }
 .contact-head-text{
-    transform: translate(0,-50px);
+    transform: translate(0,-100px);
     color: azure;
     font-size: 3em;
     font-weight: 600;
@@ -118,16 +124,19 @@ p{
     /* to center  */
 }
 
+
 .MESSAGE-bt{
  background-color: rgb(133, 44, 216);
    border-radius: 3em;
    width: 170px;
    padding: 1em;
     color: azure;
-    font-size: 1em;
+    font-size: 1.2em;
     font-weight: 500;
     margin-bottom: 2rem;
 
+    background: rgb(24,31,144);
+    background: linear-gradient(126deg, rgba(24,31,144,1) 3%, rgba(90,64,149,1) 23%, rgba(115,47,183,1) 53%, rgba(139,41,156,1) 95%);
     display: flex;
     justify-content: center;
 }
@@ -178,26 +187,30 @@ font-weight: 400;
 }
 /* ================================================================` */
 .footer {
-    margin-top: 1em;
+    margin-top: 5em;
     position: relative;
-    bottom: 0;
+    top: -2px;
     left: 0;
     width: 100%;
     overflow: hidden;
     line-height: 0;
     transform: rotate(180deg);
+    background-image: url(../../assets/images/page-header.png);  
 }
 
 .footer svg {
     position: relative;
     display: block;
     width: calc(100% + 1.3px);
-    height: 161px;
+    height: 255px;
+    background: rgb(24,31,144);
+    background: linear-gradient(90deg, rgba(24,31,144,1) 3%, rgba(90,64,149,1) 23%, rgba(115,47,183,1) 53%, rgba(139,41,156,1) 95%);
 }
 
 .footer .shape-fill {
-    fill: #5c60a8;
+    fill: rgb(32,35,66);
 }
+/* src/assets/images/page-header.png */
 @media screen and (max-width: 500px){
     .footer svg {
    

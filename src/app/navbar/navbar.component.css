@@ -21,9 +21,12 @@ a{
     position: relative;
     height: 30px;
   }
-  .nav-links{
-   
-  }
+.nav-title{
+  position: relative;
+   height: 50px;
+   top: -10px;
+}
+
   
   .nav > .nav-header {
     display: inline;
@@ -95,7 +98,7 @@ a{
       height: 0px;
       transition: all 0.3s ease-in;
       overflow-y: hidden;
-      top: 50px;
+      top: 75px;
       left: 0px;
     }
     .nav > .nav-links > a {
