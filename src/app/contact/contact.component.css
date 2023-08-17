@@ -10,13 +10,14 @@
     overflow: hidden;
     line-height: 0;
     height: 900px;
+    transform: translate(0,-2px);
 }
 
 .contact-wave svg {
     position: relative;
     display: block;
     width: calc(128% + 1.3px);
-    height: 103px;
+    height: 153px;
 }
 
 .contact-wave .shape-fill {
@@ -30,7 +31,7 @@
 
 .contact-wave2 {
     position:relative;
-    bottom: -20px;
+    bottom: -25px;
     left: 0;
     width: 100%;
     overflow: hidden;
@@ -53,20 +54,25 @@
 /* ================================================================ */
 .contact-head{
    background-image: url(src\assets\images\coming-soon.jpg);
+   background-size: cover;
     width: 100%;
     height: 400px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-  
 }
 .contact-head-text{
-    transform: translate(0,-100px);
+    transform: translate(0,-200px);
     color: azure;
-    font-size: 3em;
-    font-weight: 600;
-    
+    font-size: 4em;
+    font-weight: 600;  
+}
+@media screen and (max-width: 550px){
+    .contact-head-text{
+ 
+        font-size: 3em;
+    }
 }
 .contact-body{
 
@@ -186,35 +192,4 @@ font-weight: 400;
     font-size: 3em;
 }
 /* ================================================================` */
-.footer {
-    margin-top: 5em;
-    position: relative;
-    top: -2px;
-    left: 0;
-    width: 100%;
-    overflow: hidden;
-    line-height: 0;
-    transform: rotate(180deg);
-    background-image: url(../../assets/images/page-header.png);  
-}
 
-.footer svg {
-    position: relative;
-    display: block;
-    width: calc(100% + 1.3px);
-    height: 255px;
-    background: rgb(24,31,144);
-    background: linear-gradient(90deg, rgba(24,31,144,1) 3%, rgba(90,64,149,1) 23%, rgba(115,47,183,1) 53%, rgba(139,41,156,1) 95%);
-}
-
-.footer .shape-fill {
-    fill: rgb(32,35,66);
-}
-/* src/assets/images/page-header.png */
-@media screen and (max-width: 500px){
-    .footer svg {
-   
-        width: calc(100% + 1.3px);
-        height: 62px;
-    }
-}
