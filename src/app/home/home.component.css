@@ -67,6 +67,10 @@
     font-weight: 400;
     font-Family: '"Josefin Sans", san serif';
 }
+.social-icon a{
+margin-left: 1em;
+margin-right: 1em;
+}
 .mainRobot{
 
 }
