@@ -181,6 +181,8 @@ section.client .section-title {
     align-items: center;
 }
 
+
+
 /* card */
 .container{
   display: flex;
@@ -268,6 +270,7 @@ section.client .section-title {
     .robo img{
       width: 100%;
     }
+    
     
     
     

@@ -20,6 +20,9 @@
     transform: scale(0.7);
 }
 #event > img:nth-child(1) {
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
     top: 50%;
     right: 160px;
     transform: translateY(-50%);
@@ -29,14 +32,23 @@
     right: 160px;
 }
 #event > img:nth-child(3) {
+    height: 160px;
+    width: 160px;
     top: 90px;
     left: 60px;
 }
 #event > img:nth-child(4) {
+    height: 180px;
+    width: 250px;
+    /* border-radius: 50%; */
+    
     bottom: 25px;
     right: 160px;
 }
 #event > img:nth-child(5) {
+    height: 280px;
+    width: 280px;
+    border-radius: 50%;
     top: 75px;
     right: 350px;
 }
@@ -131,9 +143,6 @@
     .section-main .section-content .section-text {
         width: 100%;
     }
-    .avatar-1{
-        display: none;
-    }
 }
 
 @media only screen and (max-width: 800px) {
@@ -166,6 +175,8 @@
 }
 
 @media (max-width:1200px) {
-    
+    .avatar-1{
+        display: none;
+    }
     
 }
