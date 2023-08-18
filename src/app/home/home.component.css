@@ -81,8 +81,9 @@
 margin-left: 1em;
 margin-right: 1em;
 }
-.mainRobot{
-
+.linkedin{
+    height: 48px;
+    transform: translate(0,10px);
 }
 @media screen and (min-width: 1800px){
 .home-context{
