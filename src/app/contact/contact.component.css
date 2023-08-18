@@ -70,8 +70,12 @@
 }
 @media screen and (max-width: 550px){
     .contact-head-text{
- 
         font-size: 3em;
+    }
+}
+@media screen and (max-width: 402px){
+    .contact-head-text{
+        font-size: 2em;
     }
 }
 .contact-body{
@@ -104,6 +108,18 @@
     font-weight: 400;
     display: flex;
     justify-content: center;
+}
+
+@media screen and (max-width: 450px){
+    .form-head{
+        font-size: 1.5em;
+      
+    }
+    .c-form p{
+        font-size: 1em;
+      
+    }
+    
 }
 p{  
     color: aliceblue;
@@ -152,10 +168,6 @@ p{
     }
 }
 .contact-q{
-    /* border: 1px solid  rgb(45, 31, 89);
-    background-color: rgb(45, 31, 89); */
-    padding-bottom: 200px;
-    /* ekant changed padding   */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -165,7 +177,7 @@ p{
     border-radius: 30px;
     background-color: rgba(240, 248, 255, 0.785);
     padding: 1em;
-   margin-top: 2em;
+   margin-top: 4rem;
     display: flex;
     flex-direction: column;
     
@@ -180,6 +192,7 @@ p{
 }
 .c-l {
     color: #404044;
+    margin-bottom: 1em;
 }
 .h{
     color: black;
@@ -190,6 +203,14 @@ font-weight: 400;
     color: black;
     font-weight: 600;
     font-size: 3em;
+}
+@media screen and (max-width: 450px){
+    .hh{
+        font-size: 2em;
+    }
+    .h{
+    font-size: 1.5em;
+    }
 }
 /* ================================================================` */
 

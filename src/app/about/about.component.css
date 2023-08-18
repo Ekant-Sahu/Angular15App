@@ -120,6 +120,7 @@
 section.client {
 	padding:4em 0em;
 	background-color: #31377d;
+  overflow: hidden;
 
 }
 section.client .section-title {
