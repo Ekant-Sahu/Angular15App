@@ -16,16 +16,16 @@ export class AboutComponent {
   counter1 = 0;
   counter2 = 0;
   counter3 = 0;
-  value1 = 50;
-  value2 = 70;
-  value3 = 30;
+  value1 = 25;
+  value2 = 7;
+  value3 = 3;
   timerSubscription1!: Subscription;
   timerSubscription2!: Subscription;
   timerSubscription3!: Subscription;
   constructor() {
-    this.timerSubscription1 = interval(70).pipe(map(() => this.valueCounter1())).subscribe();
-    this.timerSubscription2 = interval(70).pipe(map(() => this.valueCounter2())).subscribe();
-    this.timerSubscription3 = interval(70).pipe(map(() => this.valueCounter3())).subscribe();
+    this.timerSubscription1 = interval(100).pipe(map(() => this.valueCounter1())).subscribe();
+    this.timerSubscription2 = interval(100).pipe(map(() => this.valueCounter2())).subscribe();
+    this.timerSubscription3 = interval(100).pipe(map(() => this.valueCounter3())).subscribe();
   }
   valueCounter1() {
     this.counter1++

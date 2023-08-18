@@ -12,8 +12,16 @@ body{
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    margin-top:35%;
+    /* chage this */
+    margin-top:25%;
   }
+  @media (max-width:800px) {
+    .footer{
+      margin-top: 50%;
+    }
+    
+  }
+
   
   .social-icon,
   .menu {

@@ -11,6 +11,7 @@ import { AuthGuard } from './guar/auth.guard';
 import { TexteditorComponent } from './texteditor/texteditor.component';
 import { AboutComponent } from './about/about.component';
 import { ContactComponent } from './contact/contact.component';
+import { EventComponent } from './event/event.component';
 const routes: Routes = [
   {
     path: '',
@@ -55,6 +56,11 @@ const routes: Routes = [
   {
     path: 'Editor',
     component: TexteditorComponent
+
+  },
+  {
+    path: 'event',
+    component: EventComponent
 
   },
   {
