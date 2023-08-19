@@ -315,17 +315,6 @@
       transition-duration: 0s;
     }
   }
-
-
-
-
-
-
-  /* <img  class="" src="assets/card-icon/pin.png">
-<img  class="" src="assets/card-icon/pin.png">
-<img  class="" src="assets/card-icon/pin.png">
-<img  class="" src="assets/card-icon/pin.png">
-   ================================================================ */
    :root {
     --card-width:400px
   }
