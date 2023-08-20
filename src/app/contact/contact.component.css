@@ -179,8 +179,7 @@ p{
     padding: 1em;
    margin-top: 4rem;
     display: flex;
-    flex-direction: column;
-    
+    flex-direction: column; 
 }
 .c-line{
     
@@ -210,6 +209,19 @@ font-weight: 400;
     }
     .h{
     font-size: 1.5em;
+    }
+
+}
+@media screen and (max-width: 300px){
+    .c-contaner{ 
+       padding: 0.5em;
+       margin-top: 2rem;
+    }
+    .hh{
+        font-size: 1.5em;
+    }
+    .h{
+    font-size: 2em;
     }
 }
 /* ================================================================` */
