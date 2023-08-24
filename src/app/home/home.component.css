@@ -73,7 +73,7 @@
     transform: translate(0,-600px);
     width: 100%;
     height: 55vh;
-    font-Family: '"Josefin Sans", san serif';
+    font-family: '"Josefin Sans", san serif';
     display: flex;
     justify-content: center;
     align-items: center;
@@ -118,7 +118,7 @@
     color: aliceblue;
     font-size: 1.5em;
     font-weight: 400;
-    font-Family: '"Josefin Sans", san serif';
+    font-family: '"Josefin Sans", san serif';
 }
 .social-icon a{
 margin-left: 1em;
