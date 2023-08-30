@@ -33,8 +33,15 @@
     animation-delay: 0ms;
     animation-iteration-count: 1;
     opacity: 1;
-    animation-name: react-reveal-103608975972335-1; */
-    
+    animation-name: react-reveal-103608975972335-1; */ 
+}
+@media (max-width: 660px) {
+
+  .arduino-image{
+    min-width: 100vw;
+    margin-left:auto ;
+  
+  }
 }
 .arduino-image img{
     max-width: 100%;
@@ -198,10 +205,13 @@ section.client .section-title {
       width: 100%;
       margin-bottom: 20px;
   }
+  #team{
+    padding: 10px;
+  }
 }
 .card{
-  width: 300px;
-  height: 400px;
+  width: 150px;
+  height: 200px;
   position: relative;
   overflow: hidden;
   border-radius: 10px;
