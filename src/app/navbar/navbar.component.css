@@ -69,6 +69,7 @@ background: linear-gradient(126deg, rgba(24,31,144,1) 3%, rgb(82, 55, 145) 23%, 
     display: inline;
     float: right;
     font-size: 18px;
+    font-weight: 900;
     top: -10px;
     transform: translateY(-28px);
   }

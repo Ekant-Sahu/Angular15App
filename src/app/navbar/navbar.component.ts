@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { AuthService } from '../service/auth.service';
 import { Router } from '@angular/router';
+import { ViewportScroller } from '@angular/common';
 
 @Component({
   selector: 'app-navbar',
@@ -8,7 +9,12 @@ import { Router } from '@angular/router';
   styleUrls: ['./navbar.component.css']
 })
 export class NavbarComponent {
-  constructor(private services:AuthService,private router:Router){
+  constructor(private services:AuthService,private router:Router,private viewportScroll:ViewportScroller){
+   }
+
+
+   onClickScroll(elementId:string):void {
+    this.viewportScroll.scrollToAnchor(elementId);
    }
   is_admin = this.services.IsloggedIn();
   
