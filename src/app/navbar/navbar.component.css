@@ -118,11 +118,11 @@ background: linear-gradient(126deg, rgba(24,31,144,1) 3%, rgb(82, 55, 145) 23%, 
       position: absolute;
       display: block;
       width: 100%;
-      background-color: #33313587;
+      background-color: #12121287;
       height: 0px;
       transition: all 0.3s ease-in;
       overflow-x: hidden;
-      top: 80px;
+      top: 86px;
       left: 0px;
     }
     .nav > .nav-links > a {
