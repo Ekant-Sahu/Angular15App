@@ -17,10 +17,13 @@
 
 .about-countainer{
     /* change this */
+  
     padding: 50px;
+    padding-right: 0;
     display: flex;
     flex-direction: row;
-    width: 80%;
+    width: 100vw;
+    overflow: hidden;
     justify-content: center;
     
 }
@@ -35,6 +38,8 @@
     opacity: 1;
     animation-name: react-reveal-103608975972335-1; */ 
 }
+.img-stiky{
+}
 @media (max-width: 660px) {
 
   .arduino-image{
@@ -45,12 +50,18 @@
 }
 .arduino-image img{
     max-width: 100%;
-
+    position: sticky;
+  top: 10000px;
 }
 
 .content{
-    
     justify-content: center;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    height: 600px;
+    width: 100%;
+    padding-right: 17px;
+    transform: translateX(20px);
 }
 
 .head{
@@ -257,8 +268,17 @@ section.client .section-title {
   @media (max-width:1200px) {
     .about-countainer{
         flex-direction: column;
-        padding: 25px;
+        padding: 10px;
+        overflow: hidden;
+        height: 100%;
     }
+    .content{
+      height: 100%;
+      overflow-y: none;
+      overflow-x: none;
+      padding-right: 0;
+     
+  }
     .arduino-image{
       max-width: 100%;
     }

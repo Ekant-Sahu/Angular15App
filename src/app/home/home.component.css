@@ -63,8 +63,7 @@
   }
 
   /* ============================ */
-  .HOME{
-    height: 100vh;
+  .HOME{height: 900px;
     overflow: hidden;
   }
 
@@ -167,6 +166,9 @@ margin-right: 1em;
     }
 }
 @media screen and (max-width: 500px){
+    .HOME{height: 600px;
+        overflow: hidden;
+      }
     .mainRobot{
        display: none;
        }
