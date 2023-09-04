@@ -29,12 +29,12 @@
     </div>
     
     <div class="nav-links">
-        <a routerLink="/home" class="home">Home</a>
+        <a routerLink="/home" (click)="onClickScroll('tohome')" class="home">Home</a>
         <a (click)="onClickScroll('toevent')" class="event">Event</a>
         <a (click)="onClickScroll('toabout')" class="about">About</a>
         <a (click)="onClickScroll('tocontact')" class="contact">Contact</a>
         <!-- <a routerLink="/project" class="project">Project</a> -->
-        <a routerLink="/login" class="project">Login</a>
+        <!-- <a routerLink="/login" class="project">Login</a> -->
         
     </div>
   </div>
