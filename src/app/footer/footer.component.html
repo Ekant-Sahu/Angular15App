@@ -7,11 +7,12 @@
 	</div>
 
 	<ul class="menu">
-		<li class="menu__item"><a class="menu__link" href="/home">Home</a></li>
-        <li class="menu__item"><a class="menu__link" href="/event">Event</a></li>
-		<li class="menu__item"><a class="menu__link" href="/about">About us</a></li>
-		<li class="menu__item"><a class="menu__link" href="/contact">Contact us</a></li>
+		<li class="menu__item"><a class="menu__link" routerLink="/home" (click)="onClickScroll('tohome')" >Home</a></li>
+        <li class="menu__item"><a class="menu__link" (click)="onClickScroll('toevent')">Event</a></li>
+		<li class="menu__item"><a class="menu__link" (click)="onClickScroll('toabout')">About us</a></li>
+		<li class="menu__item"><a class="menu__link" (click)="onClickScroll('tocontact')">Contact us</a></li>
 	</ul>
-    <p>Copyright © 2021. All Rights Reserved By Robotix Club</p>
+    <p>Copyright © 2023. All Rights Reserved By Robotix Club</p>
+	
 
 </footer>

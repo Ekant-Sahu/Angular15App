@@ -1,13 +1,13 @@
 #about-section{
     display: flex;
     justify-content: flex-start;
-    width: 100%;
+    width: 100wv;
     padding: 0;
     margin: 0;
     font-size: 22px;
     color: #bdb9f0;
     line-height: 35px;
-    overflow-x: hidden;
+    overflow: hidden;
     font-family: "Open Sans", sans-serif;
     background: #202342;
     
@@ -17,33 +17,51 @@
 
 .about-countainer{
     /* change this */
+  
     padding: 50px;
+    padding-right: 0;
     display: flex;
     flex-direction: row;
-    width: 80%;
+    width: 100vw;
+    overflow: hidden;
     justify-content: center;
     
 }
 
 .arduino-image{
     min-width: 800px;
-    /* margin-top: 100px; */
-    /* animation-fill-mode: both;
-    animation-duration: 1000ms;
-    animation-delay: 0ms;
-    animation-iteration-count: 1;
-    opacity: 1;
-    animation-name: react-reveal-103608975972335-1; */
-    
+   height: 100%;
 }
-.arduino-image img{
-    max-width: 100%;
+.img-stiky{
+  max-width: 100%;
+  /* position: -webkit-sticky; 
+  position: sticky;
+  top: 0px; */
+}
+.fixed{
 
 }
+.not-fixed{
+  
+}
+@media (max-width: 660px) {
+
+  .arduino-image{
+    min-width: 100vw;
+    margin-left:auto ;
+  
+  }
+}
+
 
 .content{
-    
     justify-content: center;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    /* height: 600px; */
+    width: 100%;
+    padding-right: 20px;
+    transform: translateX(25px);
 }
 
 .head{
@@ -52,7 +70,7 @@
     font-size: 40px;
     font-family: "Josefin Sans", sans-serif;
     font-weight: 700;
-    margin: 0 auto 25px auto;
+    margin: 10px auto 25px auto;
 }
 
 .header{
@@ -198,10 +216,13 @@ section.client .section-title {
       width: 100%;
       margin-bottom: 20px;
   }
+  #team{
+    padding: 10px;
+  }
 }
 .card{
-  width: 300px;
-  height: 400px;
+  width: 150px;
+  height: 200px;
   position: relative;
   overflow: hidden;
   border-radius: 10px;
@@ -247,8 +268,17 @@ section.client .section-title {
   @media (max-width:1200px) {
     .about-countainer{
         flex-direction: column;
-        padding: 25px;
+        padding: 10px;
+        overflow: hidden;
+        height: 100%;
     }
+    .content{
+      height: 100%;
+      overflow-y: none;
+      overflow-x: none;
+      padding-right: 0;
+     
+  }
     .arduino-image{
       max-width: 100%;
     }

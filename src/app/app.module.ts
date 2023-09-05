@@ -74,6 +74,7 @@ import { EventComponent } from './event/event.component';
         positionClass: 'toastr-top-left'
       }
     )
+    
   ],
   providers: [
     //{

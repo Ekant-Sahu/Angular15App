@@ -9,7 +9,7 @@
     width: 100%;
     overflow: hidden;
     line-height: 0;
-    height: 900px;
+    height: 700px;
     transform: translate(0,-2px);
 }
 
@@ -17,7 +17,7 @@
     position: relative;
     display: block;
     width: calc(128% + 1.3px);
-    height: 153px;
+    height: 0px;
 }
 
 .contact-wave .shape-fill {
@@ -34,7 +34,7 @@
     bottom: -25px;
     left: 0;
     width: 100%;
-    overflow: hidden;
+    /* overflow: hidden; */
     line-height: 0;
     transform: rotate(180deg);
     height: 869px;
@@ -45,25 +45,29 @@
     position: relative;
     display: block;
     width: calc(128% + 1.3px);
-    height: 191px;
+    height: 691px;
 }
 
 .contact-wave2 .shape-fill {
     fill: rgb(32,35,66);
 }
 /* ================================================================ */
+.ABOUT{
+    width: 100vw;
+    overflow: hidden;
+}
 .contact-head{
    background-image: url(src\assets\images\coming-soon.jpg);
    background-size: cover;
     width: 100%;
-    height: 400px;
+    height: 800px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
 .contact-head-text{
-    transform: translate(0,-200px);
+    transform: translate(0,-700px);
     color: azure;
     font-size: 4em;
     font-weight: 600;  
@@ -79,6 +83,7 @@
     }
 }
 .contact-body{
+height: 250px;
 
 }
 .contact-contaner{
@@ -86,8 +91,12 @@
     display: flex;
     justify-content: center;
     align-items: center;
-
+    transform: translate(150px,-600px);
+    overflow: hidden;
 }
+.c-img{
+   
+   }
 .c-form-center{
    
     background: #323232;
@@ -96,7 +105,6 @@
     width: 600px;
     margin: 3em;
     display: flex;
-
     justify-content: center;
     align-items: center;
 }
@@ -171,16 +179,18 @@ p{
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 300px;
+   height: 600px; 
+   /*  width: 100vw; */
+    
 }
 .c-contaner{ 
     border-radius: 30px;
-    background-color: rgba(240, 248, 255, 0.785);
-    padding: 1em;
+    background-color: rgba(240, 248, 255, 0);
+    /* padding: 1em; */
    margin-top: 4rem;
     display: flex;
-    flex-direction: column;
-    
+    flex-direction: column; 
+    max-width:100vw ;
 }
 .c-line{
     
@@ -191,16 +201,16 @@ p{
     flex-direction: row;
 }
 .c-l {
-    color: #404044;
+    color: #fdfdfd;
     margin-bottom: 1em;
 }
 .h{
-    color: black;
+    color: rgb(255, 255, 255);
 font-size: 2em;
 font-weight: 400;
 }
 .hh{
-    color: black;
+    color: rgb(255, 255, 255);
     font-weight: 600;
     font-size: 3em;
 }
@@ -210,6 +220,19 @@ font-weight: 400;
     }
     .h{
     font-size: 1.5em;
+    }
+
+}
+@media screen and (max-width: 300px){
+    .c-contaner{ 
+       padding: 0.5em;
+       margin-top: 2rem;
+    }
+    .hh{
+        font-size: 1.5em;
+    }
+    .h{
+    font-size: 2em;
     }
 }
 /* ================================================================` */
