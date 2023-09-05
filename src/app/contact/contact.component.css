@@ -52,6 +52,10 @@
     fill: rgb(32,35,66);
 }
 /* ================================================================ */
+.ABOUT{
+    width: 100vw;
+    overflow: hidden;
+}
 .contact-head{
    background-image: url(src\assets\images\coming-soon.jpg);
    background-size: cover;
@@ -80,14 +84,19 @@
 }
 .contact-body{
 height: 250px;
+
 }
 .contact-contaner{
     /* background-color: rgb(45, 31, 89); */
     display: flex;
     justify-content: center;
     align-items: center;
-    transform: translate(0,-600px);
+    transform: translate(150px,-600px);
+    overflow: hidden;
 }
+.c-img{
+   
+   }
 .c-form-center{
    
     background: #323232;
@@ -96,7 +105,6 @@ height: 250px;
     width: 600px;
     margin: 3em;
     display: flex;
-
     justify-content: center;
     align-items: center;
 }
@@ -171,13 +179,13 @@ p{
     display: flex;
     justify-content: center;
     align-items: center;
-   height: 300px; 
+   height: 600px; 
    /*  width: 100vw; */
     
 }
 .c-contaner{ 
     border-radius: 30px;
-    background-color: rgba(240, 248, 255, 0.785);
+    background-color: rgba(240, 248, 255, 0);
     /* padding: 1em; */
    margin-top: 4rem;
     display: flex;
@@ -193,16 +201,16 @@ p{
     flex-direction: row;
 }
 .c-l {
-    color: #404044;
+    color: #fdfdfd;
     margin-bottom: 1em;
 }
 .h{
-    color: black;
+    color: rgb(255, 255, 255);
 font-size: 2em;
 font-weight: 400;
 }
 .hh{
-    color: black;
+    color: rgb(255, 255, 255);
     font-weight: 600;
     font-size: 3em;
 }

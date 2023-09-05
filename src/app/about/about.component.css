@@ -1,13 +1,13 @@
 #about-section{
     display: flex;
     justify-content: flex-start;
-    width: 100%;
+    width: 100wv;
     padding: 0;
     margin: 0;
     font-size: 22px;
     color: #bdb9f0;
     line-height: 35px;
-    overflow-x: hidden;
+    overflow: hidden;
     font-family: "Open Sans", sans-serif;
     background: #202342;
     
@@ -30,15 +30,19 @@
 
 .arduino-image{
     min-width: 800px;
-    /* margin-top: 100px; */
-    /* animation-fill-mode: both;
-    animation-duration: 1000ms;
-    animation-delay: 0ms;
-    animation-iteration-count: 1;
-    opacity: 1;
-    animation-name: react-reveal-103608975972335-1; */ 
+   height: 100%;
 }
 .img-stiky{
+  max-width: 100%;
+  /* position: -webkit-sticky; 
+  position: sticky;
+  top: 0px; */
+}
+.fixed{
+
+}
+.not-fixed{
+  
 }
 @media (max-width: 660px) {
 
@@ -48,20 +52,16 @@
   
   }
 }
-.arduino-image img{
-    max-width: 100%;
-    position: sticky;
-  top: 10000px;
-}
+
 
 .content{
     justify-content: center;
     overflow-y: scroll;
     overflow-x: hidden;
-    height: 600px;
+    /* height: 600px; */
     width: 100%;
-    padding-right: 17px;
-    transform: translateX(20px);
+    padding-right: 20px;
+    transform: translateX(25px);
 }
 
 .head{

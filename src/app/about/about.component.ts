@@ -1,6 +1,8 @@
-import { Component } from '@angular/core';
+import { Component,HostListener  } from '@angular/core';
 import { interval, Subscription } from 'rxjs';
 import { map } from 'rxjs/operators';
+
+
 
 @Component({
   selector: 'app-about',
@@ -10,8 +12,26 @@ import { map } from 'rxjs/operators';
 export class AboutComponent {
 
 
+  //scroll
   
-
+  @HostListener('window:scroll', [])
+  onWindowScroll() {
+      const scrollOffset =  document.documentElement.scrollTop || document.body.scrollTop || 0 ||-document.documentElement.scrollTop;
+  
+      if (scrollOffset >= 340) {
+          document.querySelectorAll('.controllable').forEach((c) => {
+              c.classList.add('fixed');
+              c.classList.remove('not-fixed');
+              console.log('340 fixed');
+          });
+      } else {
+          document.querySelectorAll('.controllable').forEach((c) => {
+            c.classList.add('not-fixed');
+            c.classList.remove('fixed');
+              console.log('not-fixed');
+          });
+      }
+  }
   // counter logic----->
   counter1 = 0;
   counter2 = 0;
