@@ -16,7 +16,7 @@ export class AboutComponent {
   
   @HostListener('window:scroll', [])
   onWindowScroll() {
-      const scrollOffset =  document.documentElement.scrollTop || document.body.scrollTop || 0 ||-document.documentElement.scrollTop;
+      const scrollOffset =  document.documentElement.scrollTop || document.body.scrollTop || 0 ;
   
       if (scrollOffset >= 340) {
           document.querySelectorAll('.controllable').forEach((c) => {
