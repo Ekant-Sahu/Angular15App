@@ -8,14 +8,54 @@
   
     background-size: 200%;
     line-height: 1.5;
-    font-size: 4rem;
+    font-weight: 600;
+    font-size: 6rem;
     margin-top: 2rem;
-    font-weight: bolder;
+    /* font-weight: bolder; */
     color: transparent;
     background-clip: text;
     animation: animation 1.7s linear infinite;
+    font-family: 'Poppins', sans-serif;
   }
-  
+  .dot-1{
+    height: 1px;
+    position: relative;
+  }
+  .animation-1{
+    position: absolute;
+    animation: animation-11 55s linear infinite;
+  }
+  @keyframes animation-11 {
+    0%{
+        left: 0vw;
+    }
+    50% {
+        left: 60vw;
+    }
+    100%{
+        left: 0vw;
+    }
+  }
+  .dot-2{
+    height: 1px;
+    position: relative;
+  }
+  .animation-2{
+    position: absolute;
+    animation: animation-22 40s linear infinite;
+    top:-500px;
+  }
+  @keyframes animation-22 {
+    0%{
+        right: 0vw;
+    }
+    50% {
+        right: 70vw;
+    }
+    100%{
+        right: 0vw;
+    }
+  }
   @keyframes animation {
     to {
       background-position: 200% center;
@@ -23,14 +63,17 @@
   }
 
   /* ============================ */
-
+  .HOME{
+    height: 100vh;
+    overflow: hidden;
+  }
 
 
 .home{ 
-    transform: translate(0,-300px);
+    transform: translate(0,-600px);
     width: 100%;
     height: 55vh;
-    font-Family: '"Josefin Sans", san serif';
+    font-family: '"Josefin Sans", san serif';
     display: flex;
     justify-content: center;
     align-items: center;
@@ -68,19 +111,19 @@
 .home-title{ 
     color: white;
     font-size: 4.5em;
-    /* font-weight: 800; */
+    font-weight: 1000;
     margin-bottom: 0.5em;
 }
 .home-nit{
     color: aliceblue;
     font-size: 1.5em;
     font-weight: 400;
-    font-Family: '"Josefin Sans", san serif';
+    font-family: '"Josefin Sans", san serif';
 }
-.social-icon a{
+/* .social-icon a{
 margin-left: 1em;
 margin-right: 1em;
-}
+} */
 .mainRobot{
 
 }
@@ -128,7 +171,13 @@ margin-right: 1em;
        display: none;
        }
        .home{ 
-        transform: translate(0,0px);}
+        transform: translate(0,-220px);}
+        .dot-2{
+            display: none;
+        }
+        .dot-1{
+            display: none;
+        }
 }
 
 
@@ -138,7 +187,8 @@ margin-right: 1em;
 .Home-svg{
     background-image: url(../../assets/images/account-bg.jpg);
     background-size: cover;
-    height: 400px;
+    height: 800px;
+   transform: translate(0,-60px);
 }
 
 .svg-top {
@@ -146,7 +196,7 @@ margin-right: 1em;
     top: 0;
     left: 0;
     width: 100%;
-    overflow: hidden;
+    /* overflow: hidden; */
     line-height: 0;
     transform: translate(0,-0px);
     height: 100px;
@@ -156,7 +206,7 @@ margin-right: 1em;
     position: relative;
     display: block;
     width: calc(100% + 1.3px);
-    height: 100px;
+    height: 300px;
 }
 
 .svg-top .shape-fill {
@@ -172,15 +222,15 @@ margin-right: 1em;
     /* overflow: hidden; */
     line-height: 0;
     transform: rotate(180deg);
-    height: 1px;
+    height: 100px;
 }
 
 .svg-home svg {
     position: relative;
     display: block;
     width: calc(152% + 1.3px);
-    height: 300px;
-    transform: translate(0,-46px); 
+    height: 1200px;
+    transform: translate(0,0px); 
 }
 
 .svg-home .shape-fill {
@@ -193,39 +243,118 @@ margin-right: 1em;
     bottom: 0;
     left: 0;
     width: 100%;
-    /* overflow: hidden; */
     line-height: 0;
     transform: rotate(180deg);
-    height: 255px;
+    height: 605px;
+    transform: rotateY(180deg);
 }
 
 .svg-home2 svg {
     position: relative;
     display: block;
     width: calc(100% + 1.3px);
-    height: 350px;
-    transform: translate(0,-45px);
+    height: 650px;
+    transform: translate(0,-145px);
 }
 
 .svg-home2 .shape-fill {
-    fill: #20234282 ; 
+    fill: #20234200 ; 
      /* fill: #ffffff43; */
 }
+
+/* social link */
+
+/* .container {
+    margin-top: 20%;
+    margin-left: auto;
+    margin-right: auto;
+  } */
+  .btn-outline { 
+   margin-top: 15px; 
+   border: solid 1px #bbbbbb;    
+   font-size: 24px; 
+   color: #bbbbbb; 
+   background: 0 0; 
+   transition: all .3s ease-in-out; 
+  }
+  .btn-outline:hover, .btn-outline:focus, .btn-outline:active, .btn-outline.active { 
+    border: solid 1px #bbbbbb;    
+    color: #000; 
+    background: #bbbbbb; 
+  }
+  
+  .btn-social { 
+    display: inline-block; 
+    width: 48px; 
+    height: 48px; 
+    border: 1px solid #bbbbbb; 
+    border-radius: 100%; 
+    text-align: center; 
+    font-size: 24px; 
+    line-height: 46px; 
+  }
+  
+  
+  
+  .list-inline { 
+    padding-left: 0; 
+    list-style: none; 
+    margin-left: -5px; }
+  
+  .list-inline > li { 
+    display: inline-block;  
+    padding-left: 5px; 
+    padding-right: 5px; 
+  }
+  
+  .social-links { 
+    -webkit-animation: fade-in-down 0.9s; 
+    animation: fade-in-down 0.9s; 
+    -webkit-animation-delay: 0.2s; 
+    animation-delay: 0.2s; 
+  }
+  
+  /* Animations */
+  @-webkit-keyframes fade-in-down { 0% 
+    { opacity: 0; -webkit-transform: translateY(-10px); transform: translateY(-10px); 
+    }
+    100% { 
+      opacity: 1; 
+      -webkit-transform: translateY(0); 
+      transform: translateY(0); } }
+  @keyframes fade-in-down { 
+    0% { opacity: 0; 
+      -webkit-transform: translateY(-10px); 
+      transform: translateY(-10px); 
+    }
+    100% { opacity: 1; 
+      -webkit-transform: translateY(0); 
+      transform: translateY(0); 
+    } 
+  }
+
 
 @media screen and (max-width: 850px){
     .svg-top {
         transform: translate(0,0px);
     }
     .svg-home2 svg {
-        transform: translate(0,-45px);
+        transform: translate(0,0px);
     }
     .svg-home svg {
-        transform: translate(0,-45px);
+        transform: translate(0,0px);
     }
 }
 @media screen and (max-width: 500px){
     .Home-svg{
-       height: 145px;
+       height:500px;
+    }
+    .svg-home svg {
+        height: 300px;
+        transform: translate(0,304px);
+    }
+    .home{
+    transform: translate(0,-300px);
     }
 }
 
@@ -267,8 +396,9 @@ margin-right: 1em;
 
 }
 @media screen and (max-width: 500px){
+
    .svg-home2{
-    display: none;
+
    }
 }
 
