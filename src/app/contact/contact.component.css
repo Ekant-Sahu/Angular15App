@@ -46,6 +46,13 @@
 .contact-wave2 .shape-fill {
     fill: rgb(32,35,66);
 }
+@media (max-width:440px) {
+    .contact-wave2 svg {
+        
+        height: 491px;
+        transform: translateY(-30px);
+    }
+   }
 /* ================================================================ */
 .ABOUT{
     width: 100vw;
@@ -67,7 +74,7 @@
     color: azure;
     font-size: 4em;
     font-weight: 400;  
-    font-family: Poppins, Helvet;
+    font-family: 'Pacifico', cursive;
 }
 @media screen and (max-width: 550px){
     .contact-head-text{

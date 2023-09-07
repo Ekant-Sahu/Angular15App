@@ -7,7 +7,10 @@ $color-gray-dark: #aaa;
 $color-gray-light: #eee;
 $color-white: #fff;
 
-
+#event{
+  width: 100vw;
+  overflow: hidden;
+}
 
 
 .title{
@@ -106,9 +109,25 @@ html {
   }
   
 }
+@media (max-width:440px) {
+ .card{
+  width: 30rem;}
+}
+.form-btn{
+  background-color: #582265;
+  color: #eee;
+  width: 100px;
+  padding: 0.3em;
+  padding-left: 1em;
+  font-size: 1.5em;
+  margin-top: 1em;
+  border-radius: 10px;
+}
 #ei-1{
   background-image:url(https://imgs.search.brave.com/QcI5vh-1arwds1AoG8Om1sE4SewCDgkCE-kA2lXBy34/rs:fit:500:0:0/g:ce/aHR0cHM6Ly9jZG4t/aW1hZ2VzLTEubWVk/aXVtLmNvbS9tYXgv/MTIwMC8wKlpGLWx6/WFRtV1dIS29TTEsu/anBn);
- }
+ background-repeat: no-repeat; 
+ background-size: cover;
+}
 .card {
  flex: initial;
  position: relative;
@@ -293,3 +312,10 @@ html {
   }
  }
 }
+@media (max-width:440px) {
+  .card{
+   width: 350px;}
+   .card__title{
+    font-size: 50px;
+   }
+ }
