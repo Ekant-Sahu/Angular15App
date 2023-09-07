@@ -29,6 +29,7 @@ import { ContactComponent } from './contact/contact.component';
 import {IvyCarouselModule} from 'angular-responsive-carousel';
 import { FooterComponent } from './footer/footer.component';
 import { EventComponent } from './event/event.component';
+import { MessageComponent } from './message/message.component';
 
 
 
@@ -49,6 +50,7 @@ import { EventComponent } from './event/event.component';
     ContactComponent,
     FooterComponent,
     EventComponent,
+    MessageComponent,
    
   ],
   imports: [

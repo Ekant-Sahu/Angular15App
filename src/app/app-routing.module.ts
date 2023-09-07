@@ -12,6 +12,7 @@ import { TexteditorComponent } from './texteditor/texteditor.component';
 import { AboutComponent } from './about/about.component';
 import { ContactComponent } from './contact/contact.component';
 import { EventComponent } from './event/event.component';
+import { MessageComponent } from './message/message.component';
 const routes: Routes = [
   {
     path: '',
@@ -61,6 +62,11 @@ const routes: Routes = [
   {
     path: 'event',
     component: EventComponent
+
+  },
+  {
+    path: 'message',
+    component: MessageComponent
 
   },
   {

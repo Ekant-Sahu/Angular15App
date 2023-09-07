@@ -113,11 +113,11 @@
 }
 
 .home-context h1{
-    font-size: 70px;
+    font-size: 4em;
     line-height: 86px;
     margin-bottom: 15px;
-    font-family: "Josefin Sans", sans-serif;
-    font-weight: 1000 !important;
+    font-family: Poppins, Helvet;
+    font-weight: 500 ;
 }
 
 .home-title{ 
@@ -125,6 +125,7 @@
     font-size: 4.5em;
     font-weight: 1000;
     margin-bottom: 0.5em;
+    
 }
 .home-nit{
     color: aliceblue;
@@ -168,7 +169,7 @@ margin-right: 1em;
      width: 20em ;
     }
 }
-@media screen and (max-width: 600px){
+@media screen and (max-width: 740px){
     .home{ 
     padding: 0;
     }

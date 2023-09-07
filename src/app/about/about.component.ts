@@ -16,13 +16,16 @@ export class AboutComponent {
   
   @HostListener('window:scroll', [])
   onWindowScroll() {
-      const scrollOffset =  document.documentElement.scrollTop || document.body.scrollTop || 0 ;
+      const scrollOffset =  document.documentElement.scrollTop ;
   
-      if (scrollOffset >= 340) {
+      if (scrollOffset >= 840) {
+
           document.querySelectorAll('.controllable').forEach((c) => {
               c.classList.add('fixed');
               c.classList.remove('not-fixed');
               console.log('340 fixed');
+
+              
           });
       } else {
           document.querySelectorAll('.controllable').forEach((c) => {
@@ -30,7 +33,26 @@ export class AboutComponent {
             c.classList.remove('fixed');
               console.log('not-fixed');
           });
+          
       }
+      if (scrollOffset >= 840) {
+
+        document.querySelectorAll('.controllable2').forEach((c) => {
+            c.classList.add('fixed2');
+            c.classList.remove('not-fixed');
+            console.log('340 fixed');
+
+            
+        });
+    } else {
+        document.querySelectorAll('.controllable2').forEach((c) => {
+          c.classList.add('not-fixed');
+          c.classList.remove('fixed2');
+            console.log('not-fixed');
+        });
+        
+    }
+      console.log(document.documentElement.scrollTop);
   }
   // counter logic----->
   counter1 = 0;

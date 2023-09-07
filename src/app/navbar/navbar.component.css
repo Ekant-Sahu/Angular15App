@@ -27,13 +27,15 @@ a{
     margin: 0;
     z-index: 999;
     padding: 1em;
+    padding-left: 0;
+    padding-right: 0;
     /* background-color: #f7f7f700;
     background: rgb(24,31,144);
 background: linear-gradient(126deg, rgba(24,31,144,1) 3%, rgb(82, 55, 145) 23%, rgb(108, 36, 180) 53%, rgba(139,41,156,1) 95%); */
    backdrop-filter: blur(2px);
    position: fixed;
    top: 0;
-   width: 100%;
+   width: 100vw;
     height: 30px;
     display: flex;
     justify-content: center;
@@ -80,7 +82,11 @@ background: linear-gradient(126deg, rgba(24,31,144,1) 3%, rgb(82, 55, 145) 23%, 
     top: -10px;
     transform: translateY(-28px);
   }
-  
+  .link-text{
+    font-weight: 900;
+    font-size: 1em;
+    font-family: Poppins, Helvet;
+  }
   .nav > .nav-links > a {
     display: inline-block;
     padding: 13px 10px 13px 10px;
