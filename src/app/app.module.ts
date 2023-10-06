@@ -30,7 +30,7 @@ import {IvyCarouselModule} from 'angular-responsive-carousel';
 import { FooterComponent } from './footer/footer.component';
 import { EventComponent } from './event/event.component';
 import { MessageComponent } from './message/message.component';
-
+import {NgsRevealModule} from 'ngx-scrollreveal';
 
 
 
@@ -75,7 +75,8 @@ import { MessageComponent } from './message/message.component';
         preventDuplicates: true,
         positionClass: 'toastr-top-left'
       }
-    )
+    ),
+    NgsRevealModule
     
   ],
   providers: [
