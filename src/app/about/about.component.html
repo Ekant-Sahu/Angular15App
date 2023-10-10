@@ -1,6 +1,6 @@
 <div id="about-section">
   <div class="about-countainer">
-    <div class="arduino-image"> <div class="img-stiky"><img  class="img-stiky controllable"src="../assets/images/arduino.png" alt="about"></div></div>
+    <div class="arduino-image" [ngsReveal]="{ reset: true , delay: 300, origin: 'top',distance: '100px'}"> <div class="img-stiky"><img  class="img-stiky controllable"src="../assets/images/arduino.png" alt="about"></div></div>
     <div class="content">
       <div class="head">A Few Words About Us</div>
       <div class="header">Who are we ??</div>
@@ -84,7 +84,7 @@
       <div class="head">Meet our most valued</div>
       <div class="header">Team Members</div>
       <div class="team-text"><p>Our team of creative programmers, marketing experts, designers, sponsors, tech enthusiasts. We are doing what we love.</p></div>
-      <div class="container">
+      <div class="container"   [ngsRevealSet]="{ reset:true ,delay:200}" [ngsSelector]="'.card'" [ngsInterval]="200">
         <div class="card">
             <img src="https://bootdey.com/img/Content/avatar/avatar1.png" alt="image">
             <div class="layer" style="--color:#000000b3" >

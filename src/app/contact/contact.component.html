@@ -1,5 +1,5 @@
 <div class="ABOUT" >
-<div class="contact-head">
+<div class="contact-head " >
    
    <div class="contact-wave">
     <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
@@ -12,7 +12,7 @@
   </svg>
 </div>
 
-  <div class="contact-head-text">Contact Robotix Club</div>
+  <div class="contact-head-text" [ngsReveal]="{ reset: true}">Contact Robotix Club</div>
 </div>
 
 
@@ -56,25 +56,25 @@
   </div>
 </div> -->
 
-<app-message></app-message>
+<app-message [ngsReveal]="{ reset: true , delay: 100}"></app-message>
 
 
 
 <div class="contact-q" >
   
-  <div class="c-contaner button"  >
+  <div class="c-contaner button" [ngsRevealSet]="{ reset:true ,mobile: false}" [ngsInterval]="50" [ngsSelector]="'.c-line'" >
     <div class="c-line"  >
       <p class="c-l hh" >  Have questions?</p>
       <p class="c-l h"> Have questions about the Club or events? We have answers!</p>
   </div>
-  <div class="c-line f" >
+  <div class="c-line f"  >
     <img  class="contact-img" src="assets/contact/contact1.png">
     <div>
    <p class="c-l h" > Email Us</p>
    <p class="c-l "> robotixclub@nitrr.ac.in</p>
   </div>
   </div>
-    <div class="c-line f" [ngsReveal]="{ reset: true, delay: 1 }" >
+    <div class="c-line f"  >
     <img  class="contact-img" src="assets/contact/contact3.png">
     <div>
    <p class="c-l h">Visit Us</p>
