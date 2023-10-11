@@ -31,6 +31,7 @@ import { FooterComponent } from './footer/footer.component';
 import { EventComponent } from './event/event.component';
 import { MessageComponent } from './message/message.component';
 import {NgsRevealModule} from 'ngx-scrollreveal';
+import { ThreeDjdComponent } from './three-djd/three-djd.component';
 
 
 
@@ -51,6 +52,7 @@ import {NgsRevealModule} from 'ngx-scrollreveal';
     FooterComponent,
     EventComponent,
     MessageComponent,
+    ThreeDjdComponent,
    
   ],
   imports: [

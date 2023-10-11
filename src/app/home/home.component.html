@@ -1,7 +1,7 @@
 
 <!-- <button (click)="show()">toaster test</button> -->
 <div  id="tohome" class="HOME">
-<div class="Home-svg">
+<!-- <div class="Home-svg">
   <div class="svg-top">
     <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
         <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z" class="shape-fill"></path>
@@ -24,18 +24,13 @@
   <img class="animation-2" src="assets/images/dot-big.png" alt="">
  </div>
 
-</div>
-<div class="home">
+</div> -->
+<div class="home" id="net">
     <div class="home-contaner">
         <div class="home-context">
-        <h1 class="home-title"> ROBOTI<span class="X ot-text" >X</span>CLUB</h1>
+        <h1 class="home-title"> ROBOTI<span class="X ot-text" >X</span><span class="X2" >X</span>CLUB</h1>
           <p class="home-nit" >National Institute of Technology, Raipur</p>
-          <!-- <div class="social-icon">
-            <a href="#" class="icon"><link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet"><i class="fa fa-instagram" style="color: rgb(177, 43, 204); font-size: 40px; text-shadow: none; box-sizing: content-box; line-height: 72px; text-align: center; display: initial; overflow: hidden;"></i></a>
-            <a href="#" class="icon"><link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet"><i class="fa fa-github" style="color: rgb(143, 24, 207); font-size: 40px; box-sizing: content-box; line-height: 72px; text-align: center; display: initial; overflow: hidden;"></i></a>
-            <a href="#" class="icon"><link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet"><i class="fa fa-facebook-square" style="color: rgb(6, 55, 161); font-size: 40px; box-sizing: content-box; line-height: 72px; text-align: center; display: initial; overflow: hidden;"></i></a>
-            <a href="#" class="icon"><link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet"><a href="#####"><i class="fa fa-envelope" style="color: rgb(83, 4, 174); font-size: 40px; box-sizing: content-box; line-height: 72px; text-align: center; display: initial; overflow: hidden;"></i></a></a>
-          </div> -->
+         
           <div class="container">
             <div class="row">
               <div class="col-md-12 text-center ">
@@ -57,15 +52,15 @@
 
 
         </div>
-        <img  class="mainRobot" src="assets/images/mainRobot.png">
+        <!-- <img  class="mainRobot" src="assets/images/mainRobot.png"> -->
     </div>
+      
+        <a (click)="onClickScroll('toabout')" class="ScrollDown">Scroll Down
+        <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet"><i class="fa fa-sort-desc" style="color: rgb(72, 168, 237); font-size: 73px; box-sizing: content-box; line-height: 64px; text-align: center; display: initial; overflow: hidden;"></i>
+      </a>
 </div>
 </div>
-<!-- <div class="svg-home-arrow">
-  <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
-      <path d="M649.97 0L550.03 0 599.91 54.12 649.97 0z" class="shape-fill"></path>
-  </svg>
-</div> -->
+
 
 <section id="toabout"><app-about></app-about></section>
 <section id="toevent"><app-event></app-event></section>
