@@ -40,11 +40,11 @@ export class HomeComponent implements OnInit {
         trigger:".ScrollDown",
         // markers:true, 
         start:"center, 80%",
-       scrub:2,
+       scrub:3,
       },
       
-      rotate:-360,
-       duration: 10,
+      rotate:-360, transformOrigin:"50% 50%",
+       duration: 80,
       
     });
   }
