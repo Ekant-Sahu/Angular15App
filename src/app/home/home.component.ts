@@ -28,13 +28,13 @@ export class HomeComponent implements OnInit {
     this.toastr.success("yay worked")
   }
   ngOnInit() {
-    // gsap.to(".gear-c", {
+    gsap.to(".gear-c", {
     
-    //    x: -900,
+       x: -900,
 
-    //    duration: 2,
+       duration: 2,
       
-    // });
+    });
     gsap.to(".gear", {
       scrollTrigger:{
         trigger:".ScrollDown",
