@@ -1,6 +1,7 @@
-import { Component,OnInit} from '@angular/core';
-import { gsap } from "gsap";
-import ScrollTrigger from "gsap/ScrollTrigger";
+import { Component,OnInit,ElementRef, NgZone} from '@angular/core';
+import * as THREE from 'three';
+import gsap from 'gsap';
+import * as Stats from 'stats.js';
 gsap.registerPlugin(ScrollTrigger);
 @Component({
   selector: 'app-three-djd',
@@ -9,15 +10,17 @@ gsap.registerPlugin(ScrollTrigger);
 })
 export class ThreeDjdComponent implements OnInit {
   ngOnInit() {
-    gsap.to(".gear", {
-      scrollTrigger:{
-        trigger:".gear",
-        toggleActions:"restart none none none"
-      },
-       x: 100,
-
-       duration: 2,
+    // gsap.to(".gear", {
+    //   scrollTrigger:{
+    //     trigger:".gear",
+    //     toggleActions:"restart none none none"
+    //   },
+    //    x: 100,
+    //       rotate:360,
+    //    duration: 2,
       
-    });
+    // });
   }
+  
+  
 }
