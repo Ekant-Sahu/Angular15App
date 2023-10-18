@@ -18,12 +18,7 @@
     display: flex;
     flex-direction: row;
     width: 100vw;
-    height: 600px;
-    transform: translateX(40px);
-     overflow-y: scroll;
-    overflow-x: hidden;
     justify-content: center;
-    padding-right: 40px;
 }
 
 
@@ -40,19 +35,7 @@
 .img-postion{
   height: 100%;
 }
-/* .fixed{
- width: 800px;
-  position: fixed;
-  top: 0;
-}
-.fixed2{
- height: 100%;
-   position: fixed;
-   top: 0;
- } */
-.not-fixed{
-  
-}
+
 @media (max-width: 660px) {
 
   .arduino-image{
@@ -68,6 +51,7 @@
 @media (max-width:440px) {
   .about-countainer{
     overflow: hidden;
+    padding: 10px;
   }
   .arduino-image{
     height: 400px;
@@ -77,12 +61,8 @@
 
 .content{
     justify-content: center;
-    /* overflow-y: scroll;
-    overflow-x: hidden; */
-    /* height: 600px; */
     width: 100%;
-    padding-right: 20px;
-    transform: translateX(25px);
+    padding: 40px;
     
 }
 @media (max-width:400px) {

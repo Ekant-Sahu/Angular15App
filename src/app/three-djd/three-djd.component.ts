@@ -1,6 +1,7 @@
-import { Component,OnInit} from '@angular/core';
+import { Component, OnInit, ViewChild, ElementRef, Renderer2} from '@angular/core';
 import { gsap } from "gsap";
 import ScrollTrigger from "gsap/ScrollTrigger";
+import * as THREE from 'three';
 gsap.registerPlugin(ScrollTrigger);
 @Component({
   selector: 'app-three-djd',
@@ -8,16 +9,12 @@ gsap.registerPlugin(ScrollTrigger);
   styleUrls: ['./three-djd.component.scss','./three-djd.component.css']
 })
 export class ThreeDjdComponent implements OnInit {
-  ngOnInit() {
-    gsap.to(".gear", {
-      scrollTrigger:{
-        trigger:".gear",
-        toggleActions:"restart none none none"
-      },
-       x: 100,
+  
+  constructor() {}
 
-       duration: 2,
-      
-    });
+  ngOnInit(): void {
+   
   }
+
+  
 }

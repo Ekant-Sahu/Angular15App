@@ -47,5 +47,9 @@ export class HomeComponent implements OnInit {
        duration: 80,
       
     });
+  
+
+
+
   }
 }

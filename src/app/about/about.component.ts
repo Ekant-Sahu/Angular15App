@@ -1,7 +1,8 @@
-import { Component,HostListener  } from '@angular/core';
+import { Component,HostListener,OnInit  } from '@angular/core';
 import { interval, Subscription } from 'rxjs';
 import { map } from 'rxjs/operators';
-
+import { gsap } from "gsap";
+import ScrollTrigger from "gsap/ScrollTrigger";
 
 
 @Component({
@@ -90,6 +91,23 @@ export class AboutComponent {
   }
 
   // cosulsal logic
+  ngOnInit() {
+ 
+    gsap.to(".img-stiky", {
+      scrollTrigger:{
+        trigger:".pinimg",
+        //  markers:true, 
+        start:"center, 70%",
+       scrub:2,
+      },
+      y:300, 
+       duration: 100,
+      
+    });
+  
 
+
+
+  }
   
 }
