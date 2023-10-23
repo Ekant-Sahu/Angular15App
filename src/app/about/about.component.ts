@@ -100,7 +100,7 @@ export class AboutComponent {
         start:"center, 70%",
        scrub:2,
       },
-      y:300, 
+      y:260, 
        duration: 100,
       
     });
