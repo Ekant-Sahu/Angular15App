@@ -1,7 +1,7 @@
 import { Component, OnInit, ViewChild, ElementRef, Renderer2} from '@angular/core';
 import { gsap } from "gsap";
 import ScrollTrigger from "gsap/ScrollTrigger";
-
+declare function animation():void;
 gsap.registerPlugin(ScrollTrigger);
 @Component({
   selector: 'app-three-djd',
@@ -10,7 +10,7 @@ gsap.registerPlugin(ScrollTrigger);
 })
 export class ThreeDjdComponent implements OnInit {
   
-  constructor() {}
+ 
 
   ngOnInit(): void {
     const words = ["hello words", "dksfjsldfkj", "dfsdf"];

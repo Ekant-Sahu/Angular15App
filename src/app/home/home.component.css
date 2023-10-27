@@ -77,6 +77,7 @@
 .gear-c{
   height: 10px;
   transform: translate(-50vw,100px);
+  display: none;
 }
   .gear{
     height:1000px ;
@@ -118,7 +119,7 @@
     max-width: 1500px;
     padding: 2rem;
     display: flex;
-    justify-content: center;
+    /* justify-content: center; */
 }
 .home-context{
     margin:0;

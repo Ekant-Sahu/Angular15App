@@ -15,46 +15,7 @@ export class AboutComponent {
 
   //scroll
   
-  @HostListener('window:scroll', [])
-  onWindowScroll() {
-      const scrollOffset =  document.documentElement.scrollTop ;
   
-      if (scrollOffset >= 840) {
-
-          document.querySelectorAll('.controllable').forEach((c) => {
-              c.classList.add('fixed');
-              c.classList.remove('not-fixed');
-              console.log('340 fixed');
-
-              
-          });
-      } else {
-          document.querySelectorAll('.controllable').forEach((c) => {
-            c.classList.add('not-fixed');
-            c.classList.remove('fixed');
-              console.log('not-fixed');
-          });
-          
-      }
-      if (scrollOffset >= 840) {
-
-        document.querySelectorAll('.controllable2').forEach((c) => {
-            c.classList.add('fixed2');
-            c.classList.remove('not-fixed');
-            console.log('340 fixed');
-
-            
-        });
-    } else {
-        document.querySelectorAll('.controllable2').forEach((c) => {
-          c.classList.add('not-fixed');
-          c.classList.remove('fixed2');
-            console.log('not-fixed');
-        });
-        
-    }
-      console.log(document.documentElement.scrollTop);
-  }
   // counter logic----->
   counter1 = 0;
   counter2 = 0;
